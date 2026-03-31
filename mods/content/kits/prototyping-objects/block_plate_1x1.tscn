@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://d2r3t1u2x8h3w"]
+
+[ext_resource type="PackedScene" uid="uid://clc52fyiagmeq" path="res://mods/content/kits/prototyping-objects/sources/BLOCK_Plate_1x1.blend" id="1_mqda1"]
+[ext_resource type="Material" uid="uid://drug21gp8mjuc" path="res://mods/content/kits/prototyping-objects/materials/prototype-grid-material.tres" id="2_7yq7m"]
+
+[node name="BLOCK_Plate_1x1x1" unique_id=1908272249 instance=ExtResource("1_mqda1")]
+
+[node name="STRUCTURE_Plate_1x1" parent="." index="0" unique_id=1116519676]
+surface_material_override/0 = ExtResource("2_7yq7m")

@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://ctahdabunvmin"]
+
+[ext_resource type="PackedScene" uid="uid://dbwlffn4hg2xe" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_10/Barricade_10.gltf" id="1_j760e"]
+[ext_resource type="Texture2D" uid="uid://xgtonhwijypt" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_10/textures/Barricade_10_warning_sing_BaseColor.png" id="2_tvruh"]
+[ext_resource type="Texture2D" uid="uid://ckw0u6xrecfa0" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_10/textures/Barricade_10_warning_sing_Metallic.png" id="3_edlbf"]
+[ext_resource type="Texture2D" uid="uid://dhovkt3vjw1h7" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_10/textures/Barricade_10_warning_sing_Normal.png" id="4_xmfpw"]
+[ext_resource type="Texture2D" uid="uid://bmih761ccfx13" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_10/textures/Barricade_10_warning_sing_Roughness.png" id="5_j7xwy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dg4nq"]
+albedo_texture = ExtResource("2_tvruh")
+metallic = 1.0
+metallic_texture = ExtResource("3_edlbf")
+roughness_texture = ExtResource("5_j7xwy")
+normal_enabled = true
+normal_texture = ExtResource("4_xmfpw")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ik8gb"]
+size = Vector3(1.2333984, 0.76678467, 0.09562683)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j760e"]
+size = Vector3(0.08786011, 0.9683533, 0.09562683)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tvruh"]
+size = Vector3(0.09643555, 0.15612793, 0.60913086)
+
+[node name="Barricade_10" unique_id=537790913 instance=ExtResource("1_j760e")]
+
+[node name="Barricade_10" parent="." index="0" unique_id=1507060916]
+surface_material_override/0 = SubResource("StandardMaterial3D_dg4nq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1076234450]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.74172974, -0.00756073)
+shape = SubResource("BoxShape3D_ik8gb")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2" unique_id=1909419179]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5081024, 0.64094543, -0.00756073)
+shape = SubResource("BoxShape3D_j760e")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="3" unique_id=584607745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.508, 0.641, -0.008)
+shape = SubResource("BoxShape3D_j760e")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." index="4" unique_id=2016725560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.51086426, 0.074279785, 0)
+shape = SubResource("BoxShape3D_tvruh")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." index="5" unique_id=1374993037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.511, 0.074, 0)
+shape = SubResource("BoxShape3D_tvruh")

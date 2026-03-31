@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cnjvgam38vghc"]
+
+[ext_resource type="Texture2D" uid="uid://bk438suw6px8k" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/textures/Barricade_9_fenced_barrier_BaseColor.png" id="1_e6erv"]
+[ext_resource type="Texture2D" uid="uid://dsmvj0cj4meyx" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/textures/Barricade_9_fenced_barrier_Metallic.png" id="2_i3084"]
+[ext_resource type="Texture2D" uid="uid://lsgvef8nqb4c" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/textures/Barricade_9_fenced_barrier_Normal.png" id="3_q5voh"]
+[ext_resource type="Texture2D" uid="uid://b7piv7ucmh8yr" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/textures/Barricade_9_fenced_barrier_Roughness.png" id="4_crfha"]
+
+[resource]
+albedo_texture = ExtResource("1_e6erv")
+metallic = 1.0
+metallic_texture = ExtResource("2_i3084")
+roughness_texture = ExtResource("4_crfha")
+normal_enabled = true
+normal_texture = ExtResource("3_q5voh")

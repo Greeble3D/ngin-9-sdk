@@ -1,0 +1,11 @@
+Model Information:
+* title:	Trash can
+* source:	https://sketchfab.com/3d-models/trash-can-1aba5376ea5c43ec84d01b9c0f713ee3
+* author:	Henry VIII (https://sketchfab.com/henryviii)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Trash can" (https://sketchfab.com/3d-models/trash-can-1aba5376ea5c43ec84d01b9c0f713ee3) by Henry VIII (https://sketchfab.com/henryviii) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

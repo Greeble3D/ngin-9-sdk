@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ca661u5hfhs4e"]
+
+[ext_resource type="PackedScene" uid="uid://cyrjkq6t38ojm" path="res://mods/content/kits/testing-objects/crowbar/crowbar.gltf" id="1_wufll"]
+[ext_resource type="Texture2D" uid="uid://w07j4c3j846s" path="res://mods/content/kits/testing-objects/crowbar/textures/crowbar_DefaultMaterial.001_BaseColor.png" id="2_nxoi5"]
+[ext_resource type="Texture2D" uid="uid://clyovrxu62cn7" path="res://mods/content/kits/testing-objects/crowbar/textures/crowbar_DefaultMaterial.001_Metallic.png" id="3_aedjw"]
+[ext_resource type="Texture2D" uid="uid://bwy6w2hoyl18g" path="res://mods/content/kits/testing-objects/crowbar/textures/crowbar_DefaultMaterial.001_Normal.png" id="4_nfwq8"]
+[ext_resource type="Texture2D" uid="uid://xcdm5nx0bcjr" path="res://mods/content/kits/testing-objects/crowbar/textures/crowbar_DefaultMaterial.001_Roughness.png" id="5_6wipy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d1eqi"]
+albedo_texture = ExtResource("2_nxoi5")
+metallic = 1.0
+metallic_texture = ExtResource("3_aedjw")
+roughness_texture = ExtResource("5_6wipy")
+normal_enabled = true
+normal_texture = ExtResource("4_nfwq8")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_colsg"]
+size = Vector3(0.029296875, 0.65208435, 0.051818848)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_okd2m"]
+size = Vector3(0.029296875, 0.0982666, 0.16369629)
+
+[node name="crowbar" unique_id=617947841 instance=ExtResource("1_wufll")]
+
+[node name="Crowbar" parent="." index="0" unique_id=1196572719]
+surface_material_override/0 = SubResource("StandardMaterial3D_d1eqi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=236643715]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04673004, -0.004566163)
+shape = SubResource("BoxShape3D_colsg")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2" unique_id=964564070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3287964, 0.050964355)
+shape = SubResource("BoxShape3D_okd2m")

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://4s0e2toe4fl1"]
+
+[ext_resource type="PackedScene" uid="uid://0s3s2c1yvb2a" path="res://mods/content/kits/testing-objects/wood_pallet/wood_pallet.gltf" id="1_vxxjo"]
+[ext_resource type="Texture2D" uid="uid://bl168do14q2fn" path="res://mods/content/kits/testing-objects/wood_pallet/texture/scene_MI_Pallet_00_BaseColor.png" id="2_0xk76"]
+[ext_resource type="Texture2D" uid="uid://cmkl16wcpjf45" path="res://mods/content/kits/testing-objects/wood_pallet/texture/scene_MI_Pallet_00_Metallic.png" id="3_37pw5"]
+[ext_resource type="Texture2D" uid="uid://405xpw0gd3cn" path="res://mods/content/kits/testing-objects/wood_pallet/texture/scene_MI_Pallet_00_Normal.png" id="4_806qe"]
+[ext_resource type="Texture2D" uid="uid://d1jogy76uhib0" path="res://mods/content/kits/testing-objects/wood_pallet/texture/scene_MI_Pallet_00_Roughness.png" id="5_v0cay"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iyi1b"]
+albedo_texture = ExtResource("2_0xk76")
+metallic = 1.0
+metallic_texture = ExtResource("3_37pw5")
+roughness_texture = ExtResource("5_v0cay")
+normal_enabled = true
+normal_texture = ExtResource("4_806qe")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lf0he"]
+size = Vector3(1.1953125, 0.15527344, 1.1953125)
+
+[node name="wood_pallet" unique_id=2073760360 instance=ExtResource("1_vxxjo")]
+
+[node name="Pallet" parent="." index="0" unique_id=2033302844]
+surface_material_override/0 = SubResource("StandardMaterial3D_iyi1b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1924819045]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07849121, 0)
+shape = SubResource("BoxShape3D_lf0he")

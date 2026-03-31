@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://confn6iwdpt06"]
+
+[ext_resource type="PackedScene" uid="uid://crt5it1wwqshh" path="res://mods/content/kits/testing-objects/cardboard_box/cardboard-box.gltf" id="1_m3of6"]
+[ext_resource type="Texture2D" uid="uid://7hobb6l38mdi" path="res://mods/content/kits/testing-objects/cardboard_box/textures/cardboard-box_Cardboard_box_texture_BaseColor.png" id="2_ut2ln"]
+[ext_resource type="Texture2D" uid="uid://gqjmtkbqu5gp" path="res://mods/content/kits/testing-objects/cardboard_box/textures/cardboard-box_Cardboard_box_texture_Normal.png" id="3_hlrys"]
+[ext_resource type="Texture2D" uid="uid://dx0xb444a0jd5" path="res://mods/content/kits/testing-objects/cardboard_box/textures/cardboard-box_Cardboard_box_texture_Roughness.png" id="4_r3luf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wqoqw"]
+albedo_texture = ExtResource("2_ut2ln")
+roughness_texture = ExtResource("4_r3luf")
+normal_enabled = true
+normal_texture = ExtResource("3_hlrys")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u6qtq"]
+size = Vector3(0.5010376, 0.2822876, 0.32299805)
+
+[node name="cardboard-box" unique_id=689942791 instance=ExtResource("1_m3of6")]
+
+[node name="Cardboard_box_Cardboard_box_texture_0" parent="." index="0" unique_id=2112118665]
+surface_material_override/0 = SubResource("StandardMaterial3D_wqoqw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=316855374]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000579834, 0.1388855, -0.00012207031)
+shape = SubResource("BoxShape3D_u6qtq")

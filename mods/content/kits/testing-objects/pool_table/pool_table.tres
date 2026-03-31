@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cps8kqag8hphx"]
+
+[ext_resource type="Texture2D" uid="uid://dcma54vcqm772" path="res://mods/content/kits/testing-objects/pool_table/textures/pool_table_Material_BaseColor.png" id="1_ti6m4"]
+[ext_resource type="Texture2D" uid="uid://xkek7gvome8m" path="res://mods/content/kits/testing-objects/pool_table/textures/pool_table_Material_Roughness.png" id="4_dsaek"]
+
+[resource]
+albedo_texture = ExtResource("1_ti6m4")
+roughness_texture = ExtResource("4_dsaek")
+normal_enabled = true

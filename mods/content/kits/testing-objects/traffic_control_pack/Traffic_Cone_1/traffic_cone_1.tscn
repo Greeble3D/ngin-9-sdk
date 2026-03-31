@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bngqx7w0o3f2c"]
+
+[ext_resource type="PackedScene" uid="uid://b5y42xdle4156" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Cone_1/Traffic_Cone_1.gltf" id="1_vafjf"]
+[ext_resource type="Texture2D" uid="uid://dgrlik652srhm" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Cone_1/textures/Traffic_Cone_1_None.001_BaseColor.png" id="2_og0wc"]
+[ext_resource type="Texture2D" uid="uid://dj7gda5go2uih" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Cone_1/textures/Traffic_Cone_1_None.001_Metallic.png" id="3_2w7t7"]
+[ext_resource type="Texture2D" uid="uid://cip73thamr0wh" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Cone_1/textures/Traffic_Cone_1_None.001_Normal.png" id="4_6j80m"]
+[ext_resource type="Texture2D" uid="uid://bp8qdenaoqik8" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Cone_1/textures/Traffic_Cone_1_None.001_Roughness.png" id="5_kajff"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dkxyv"]
+albedo_texture = ExtResource("2_og0wc")
+metallic = 1.0
+metallic_texture = ExtResource("3_2w7t7")
+roughness_texture = ExtResource("5_kajff")
+normal_enabled = true
+normal_texture = ExtResource("4_6j80m")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ratsb"]
+radius = 0.05
+height = 0.45776367
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k42s2"]
+size = Vector3(0.3544922, 0.03466034, 0.35717773)
+
+[node name="Traffic_Cone_1" unique_id=1879628167 instance=ExtResource("1_vafjf")]
+
+[node name="Traffic_Cone_1" parent="." index="0" unique_id=1033817784]
+surface_material_override/0 = SubResource("StandardMaterial3D_dkxyv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=949893810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.23205566, 0)
+shape = SubResource("CapsuleShape3D_ratsb")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2" unique_id=1730727795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.017147064, 0)
+shape = SubResource("BoxShape3D_k42s2")

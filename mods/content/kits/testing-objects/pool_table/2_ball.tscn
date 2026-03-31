@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dem0pf1bvaf8s"]
+
+[ext_resource type="PackedScene" uid="uid://b0fcwttsx0yww" path="res://mods/content/kits/testing-objects/pool_table/2_ball.gltf" id="1_dvvrf"]
+[ext_resource type="Material" uid="uid://cps8kqag8hphx" path="res://mods/content/kits/testing-objects/pool_table/pool_table.tres" id="2_lcden"]
+[ext_resource type="PackedScene" uid="uid://bvowx3xtcp5bq" path="res://mods/content/kits/testing-objects/pool_table/pool_ball_collision_shape_3d.tscn" id="3_p4nk6"]
+
+[node name="2_ball" unique_id=479968413 instance=ExtResource("1_dvvrf")]
+
+[node name="2_Ball" parent="." index="0" unique_id=1283887857]
+surface_material_override/0 = ExtResource("2_lcden")
+
+[node name="PoolBallCollisionShape3D" parent="." index="1" unique_id=1236305283 instance=ExtResource("3_p4nk6")]

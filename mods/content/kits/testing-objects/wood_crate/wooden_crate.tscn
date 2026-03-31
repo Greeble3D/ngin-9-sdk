@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://c30vpd5hglnkh"]
+
+[ext_resource type="PackedScene" uid="uid://u1pjxq7w0q5b" path="res://mods/content/kits/testing-objects/wood_crate/wooden_crate.gltf" id="1_7dyuv"]
+[ext_resource type="Texture2D" uid="uid://dkajt5ila26a2" path="res://mods/content/kits/testing-objects/wood_crate/textures/wooden_crate_crate_2_BaseColor.png" id="2_3xw58"]
+[ext_resource type="Texture2D" uid="uid://djlady5a3fqki" path="res://mods/content/kits/testing-objects/wood_crate/textures/wooden_crate_crate_2_Metallic.png" id="3_0mou3"]
+[ext_resource type="Texture2D" uid="uid://b5eu0mdxqewjc" path="res://mods/content/kits/testing-objects/wood_crate/textures/wooden_crate_crate_2_Normal.png" id="4_luno1"]
+[ext_resource type="Texture2D" uid="uid://dodxa3fudhfdf" path="res://mods/content/kits/testing-objects/wood_crate/textures/wooden_crate_crate_2_Roughness.png" id="5_18iiu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y71ij"]
+albedo_texture = ExtResource("2_3xw58")
+metallic = 1.0
+metallic_texture = ExtResource("3_0mou3")
+roughness_texture = ExtResource("5_18iiu")
+normal_enabled = true
+normal_texture = ExtResource("4_luno1")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4lyvo"]
+size = Vector3(0.47460938, 0.020996094, 0.6972656)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_24r1r"]
+size = Vector3(0.03881836, 0.43139648, 0.6972656)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o41rj"]
+size = Vector3(0.390625, 0.43139648, 0.029785156)
+
+[node name="wooden_crate" unique_id=1444808036 instance=ExtResource("1_7dyuv")]
+
+[node name="crate_2_crate_2_0" parent="." index="0" unique_id=523419523]
+surface_material_override/0 = SubResource("StandardMaterial3D_y71ij")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=2086372486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.008544922, 0)
+shape = SubResource("BoxShape3D_4lyvo")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2" unique_id=885782831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21789551, 0.23899673, 0)
+shape = SubResource("BoxShape3D_24r1r")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="3" unique_id=1386172227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.218, 0.239, 0)
+shape = SubResource("BoxShape3D_24r1r")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." index="4" unique_id=627173263]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.239, 0.33374023)
+shape = SubResource("BoxShape3D_o41rj")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." index="5" unique_id=1109790332]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.239, -0.334)
+shape = SubResource("BoxShape3D_o41rj")

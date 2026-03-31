@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dmktbac1v0gpt"]
+
+[ext_resource type="PackedScene" uid="uid://1ecg5wpc3xax" path="res://mods/content/kits/testing-objects/traffic_control_pack/Jersey_Barrier/Jersey_Barrier.gltf" id="1_xokft"]
+[ext_resource type="Texture2D" uid="uid://kl34jkxgfyys" path="res://mods/content/kits/testing-objects/traffic_control_pack/Jersey_Barrier/textures/Jersey_Barrier_None.002_BaseColor.png" id="2_0l40p"]
+[ext_resource type="Texture2D" uid="uid://3ufcxu3745ro" path="res://mods/content/kits/testing-objects/traffic_control_pack/Jersey_Barrier/textures/Jersey_Barrier_None.002_Normal.png" id="3_h2xe8"]
+[ext_resource type="Texture2D" uid="uid://vtmljtgohdwu" path="res://mods/content/kits/testing-objects/traffic_control_pack/Jersey_Barrier/textures/Jersey_Barrier_None.002_Metallic.png" id="4_o31to"]
+[ext_resource type="Texture2D" uid="uid://cg78dvodswrlx" path="res://mods/content/kits/testing-objects/traffic_control_pack/Jersey_Barrier/textures/Jersey_Barrier_None.002_Roughness.png" id="5_bynl0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4b2q0"]
+albedo_texture = ExtResource("2_0l40p")
+metallic = 1.0
+metallic_texture = ExtResource("4_o31to")
+roughness_texture = ExtResource("5_bynl0")
+bent_normal_enabled = true
+bent_normal_texture = ExtResource("3_h2xe8")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_exq4r"]
+size = Vector3(0.7705078, 0.6680298, 0.7705078)
+
+[node name="Jersey_Barrier" unique_id=1415897098 instance=ExtResource("1_xokft")]
+
+[node name="Jersey_Barrier" parent="." index="0" unique_id=2058155289]
+surface_material_override/0 = SubResource("StandardMaterial3D_4b2q0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=674237284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.33059692, 0)
+shape = SubResource("BoxShape3D_exq4r")

@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://wxvrix4ioebn"]
+
+[ext_resource type="PackedScene" uid="uid://c44gprn7cw4sa" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Drum_2/Traffic_Drum_2.gltf" id="1_a41lb"]
+[ext_resource type="Texture2D" uid="uid://cv03n1uyn6opl" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Drum_2/textures/Traffic_Drum_2_None_BaseColor.png" id="2_mukya"]
+[ext_resource type="Texture2D" uid="uid://dnufkfcblqko3" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Drum_2/textures/Traffic_Drum_2_None_Metallic.png" id="3_xj6in"]
+[ext_resource type="Texture2D" uid="uid://dpo1evpens5cy" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Drum_2/textures/Traffic_Drum_2_None_Normal.png" id="4_ul6rj"]
+[ext_resource type="Texture2D" uid="uid://cwdeqc4yfn3ce" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Drum_2/textures/Traffic_Drum_2_None_Roughness.png" id="5_x751h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ogyvt"]
+albedo_texture = ExtResource("2_mukya")
+metallic = 1.0
+metallic_texture = ExtResource("3_xj6in")
+roughness_texture = ExtResource("5_x751h")
+normal_enabled = true
+normal_texture = ExtResource("4_ul6rj")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_q6io0"]
+height = 0.61083984
+radius = 0.22705078
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_286cl"]
+height = 0.028747559
+radius = 0.32666016
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pntj1"]
+size = Vector3(0.034057617, 0.068359375, 0.29492188)
+
+[node name="Traffic_Drum_2" unique_id=258227269 instance=ExtResource("1_a41lb")]
+
+[node name="Traffic_Drum_2" parent="." index="0" unique_id=573954788]
+surface_material_override/0 = SubResource("StandardMaterial3D_ogyvt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=621958194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.30541992, 0)
+shape = SubResource("CylinderShape3D_q6io0")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2" unique_id=1436531390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.014373779, 0)
+shape = SubResource("CylinderShape3D_286cl")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="3" unique_id=336054314]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01373291, 0.6472168, 0)
+shape = SubResource("BoxShape3D_pntj1")

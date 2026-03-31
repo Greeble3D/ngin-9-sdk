@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bdab2occp8j7e"]
+
+[ext_resource type="PackedScene" uid="uid://2nvggd2dvaxt" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/Barricade_9.gltf" id="1_ma1g8"]
+[ext_resource type="Material" uid="uid://cnjvgam38vghc" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/barricade_9.tres" id="2_jlr0l"]
+[ext_resource type="Texture2D" uid="uid://con6ncl44f2f4" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/textures/Barricade_9_fence_BaseColor.png" id="2_r1012"]
+[ext_resource type="Texture2D" uid="uid://oxl1og4bj7" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/textures/Barricade_9_fence_Metallic.png" id="3_ifk3r"]
+[ext_resource type="Texture2D" uid="uid://bakohehwewnou" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/textures/Barricade_9_fence_Normal.png" id="4_bgfei"]
+[ext_resource type="Texture2D" uid="uid://cohocntgsfnxi" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_9/textures/Barricade_9_fence_Roughness.png" id="5_s7jw4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d3gw4"]
+cull_mode = 2
+albedo_texture = ExtResource("2_r1012")
+metallic = 1.0
+metallic_texture = ExtResource("3_ifk3r")
+roughness_texture = ExtResource("5_s7jw4")
+normal_enabled = true
+normal_texture = ExtResource("4_bgfei")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uvjp0"]
+size = Vector3(2.6149902, 0.8735962, 0.48339844)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5pjf3"]
+size = Vector3(2.4924316, 1.4456253, 0.060546875)
+
+[node name="Barricade_9" unique_id=1429476166 instance=ExtResource("1_ma1g8")]
+
+[node name="Barricade_9_Screen" parent="." index="0" unique_id=1103521014]
+surface_material_override/0 = SubResource("StandardMaterial3D_d3gw4")
+
+[node name="Object_9" parent="." index="1" unique_id=510741156]
+surface_material_override/0 = ExtResource("2_jlr0l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2" unique_id=271659690]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4275818, 0)
+shape = SubResource("BoxShape3D_uvjp0")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="3" unique_id=254575692]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6568146, 0)
+shape = SubResource("BoxShape3D_5pjf3")

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dqd581roba201"]
+
+[ext_resource type="PackedScene" uid="uid://qbrl141od35v" path="res://mods/content/kits/testing-objects/pool_table/pool_stick.gltf" id="1_kpkrk"]
+[ext_resource type="Material" uid="uid://cps8kqag8hphx" path="res://mods/content/kits/testing-objects/pool_table/pool_table.tres" id="2_vby6k"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qmb4a"]
+radius = 0.02
+height = 1.7165527
+
+[node name="pool_stick" unique_id=489507657 instance=ExtResource("1_kpkrk")]
+
+[node name="Pool_Stick" parent="." index="0" unique_id=1322764117]
+surface_material_override/0 = ExtResource("2_vby6k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1594023319]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -0.27478027, -1.2011028e-08, 0)
+shape = SubResource("CapsuleShape3D_qmb4a")

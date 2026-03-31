@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c6sdpyepj8r5l"]
+
+[ext_resource type="PackedScene" uid="uid://chljli1jldqip" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_4/Barricade_4.gltf" id="1_q0hju"]
+[ext_resource type="Texture2D" uid="uid://bp3yumdksgr1" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_4/textures/Barricade_4_barrier_BaseColor.png" id="2_j05x1"]
+[ext_resource type="Texture2D" uid="uid://gack2ugm7mur" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_4/textures/Barricade_4_barrier_Metallic.png" id="3_p5j77"]
+[ext_resource type="Texture2D" uid="uid://eqjcevr3r6kw" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_4/textures/Barricade_4_barrier_Normal.png" id="4_7io8x"]
+[ext_resource type="Texture2D" uid="uid://ccdrkexkxrbil" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_4/textures/Barricade_4_barrier_Roughness.png" id="5_f18jw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_weid5"]
+albedo_texture = ExtResource("2_j05x1")
+metallic = 1.0
+metallic_texture = ExtResource("3_p5j77")
+roughness_texture = ExtResource("5_f18jw")
+emission_enabled = true
+normal_enabled = true
+normal_texture = ExtResource("4_7io8x")
+
+[node name="Barricade_4" unique_id=747177235 instance=ExtResource("1_q0hju")]
+
+[node name="Barricade_4" parent="." index="0" unique_id=1511706322]
+surface_material_override/0 = SubResource("StandardMaterial3D_weid5")

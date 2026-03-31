@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c0yk0oedcfkbv"]
+
+[ext_resource type="PackedScene" uid="uid://d34vmd842155b" path="res://mods/content/kits/testing-objects/beach_ball/beach_ball.gltf" id="1_mje7w"]
+[ext_resource type="Texture2D" uid="uid://dffdakp61t1i3" path="res://mods/content/kits/testing-objects/beach_ball/textures/beach_ball_beach_ball_BaseColor.png" id="2_dcvo8"]
+[ext_resource type="Texture2D" uid="uid://fk25yh3tbj25" path="res://mods/content/kits/testing-objects/beach_ball/textures/beach_ball_beach_ball_Normal.png" id="3_i6047"]
+[ext_resource type="Texture2D" uid="uid://beg326i7dfkk5" path="res://mods/content/kits/testing-objects/beach_ball/textures/beach_ball_beach_ball_Roughness.png" id="4_6tjps"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_outkt"]
+albedo_texture = ExtResource("2_dcvo8")
+roughness_texture = ExtResource("4_6tjps")
+normal_enabled = true
+normal_texture = ExtResource("3_i6047")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4hbo8"]
+radius = 0.30254436
+
+[node name="beach_ball" unique_id=1867207047 instance=ExtResource("1_mje7w")]
+
+[node name="beach_ball_beach_ball_0" parent="." index="0" unique_id=455740322]
+surface_material_override/0 = SubResource("StandardMaterial3D_outkt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1199617559]
+shape = SubResource("SphereShape3D_4hbo8")

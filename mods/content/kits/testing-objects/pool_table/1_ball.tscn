@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://3yntnike5wh8"]
+
+[ext_resource type="PackedScene" uid="uid://1qcpx7gw636x" path="res://mods/content/kits/testing-objects/pool_table/1_ball.gltf" id="1_q0oih"]
+[ext_resource type="Material" uid="uid://cps8kqag8hphx" path="res://mods/content/kits/testing-objects/pool_table/pool_table.tres" id="2_y05rf"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_iu54i"]
+radius = 0.03
+
+[node name="1_ball" unique_id=2123811928 instance=ExtResource("1_q0oih")]
+
+[node name="1_Ball" parent="." index="0" unique_id=1263050093]
+surface_material_override/0 = ExtResource("2_y05rf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1334830053]
+shape = SubResource("SphereShape3D_iu54i")

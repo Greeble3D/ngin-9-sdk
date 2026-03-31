@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://o6tlojuw4lwx"]
+
+[ext_resource type="PackedScene" uid="uid://dhxqhy3lyvcfo" path="res://mods/content/kits/testing-objects/trash_can/trash_can.gltf" id="1_mua7t"]
+[ext_resource type="Texture2D" uid="uid://djc8vs2vnmht6" path="res://mods/content/kits/testing-objects/trash_can/texture/trash_can_M_trash_can_Metallic.png" id="3_oevmq"]
+[ext_resource type="Texture2D" uid="uid://frbrw83u4p2a" path="res://mods/content/kits/testing-objects/trash_can/texture/trash_can_M_trash_can_Normal.png" id="4_kf3mg"]
+[ext_resource type="Texture2D" uid="uid://bm55ajxheil4t" path="res://mods/content/kits/testing-objects/trash_can/texture/trash_can_M_trash_can_Roughness.png" id="5_4wsqx"]
+[ext_resource type="Texture2D" uid="uid://edak8qf83vun" path="res://mods/content/kits/testing-objects/trash_can/texture/trash_can_M_trash_can_BaseColor.png" id="6_yfwvn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3sti2"]
+albedo_texture = ExtResource("6_yfwvn")
+metallic = 1.0
+metallic_texture = ExtResource("3_oevmq")
+roughness_texture = ExtResource("5_4wsqx")
+normal_enabled = true
+normal_texture = ExtResource("4_kf3mg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gd3ji"]
+albedo_texture = ExtResource("6_yfwvn")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_v7ph1"]
+height = 0.82666016
+radius = 0.2163086
+
+[node name="trash_can" unique_id=962169193 instance=ExtResource("1_mua7t")]
+
+[node name="Trash_Can_Lid" parent="." index="0" unique_id=1879746625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025106287, 0.77027905, 0)
+surface_material_override/0 = SubResource("StandardMaterial3D_3sti2")
+
+[node name="Trash_Can" parent="." index="1" unique_id=2085703380]
+surface_material_override/0 = SubResource("StandardMaterial3D_gd3ji")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2" unique_id=622083163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42578125, 0)
+shape = SubResource("CylinderShape3D_v7ph1")

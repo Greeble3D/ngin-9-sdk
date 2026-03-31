@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cd6qutia01377"]
+
+[ext_resource type="PackedScene" uid="uid://ciar3xgukrg8g" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_6/Barricade_6.gltf" id="1_vexlc"]
+[ext_resource type="Texture2D" uid="uid://c6vc3b6d5ne4e" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_6/textures/Barricade_6_wall_barrier_BaseColor.png" id="2_cf5r6"]
+[ext_resource type="Texture2D" uid="uid://c5xfiq56a635y" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_6/textures/Barricade_6_wall_barrier_Metallic.png" id="3_effkr"]
+[ext_resource type="Texture2D" uid="uid://c1bwwv23l1g5l" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_6/textures/Barricade_6_wall_barrier_Normal.png" id="4_0qii1"]
+[ext_resource type="Texture2D" uid="uid://l1comvox8um3" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_6/textures/Barricade_6_wall_barrier_Roughness.png" id="5_gydmv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hmvw8"]
+albedo_texture = ExtResource("2_cf5r6")
+metallic = 1.0
+metallic_texture = ExtResource("3_effkr")
+roughness_texture = ExtResource("5_gydmv")
+normal_enabled = true
+normal_texture = ExtResource("4_0qii1")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xtms2"]
+size = Vector3(0.9477539, 1.9790344, 0.38891602)
+
+[node name="Barricade_6" unique_id=1962976974 instance=ExtResource("1_vexlc")]
+
+[node name="Barricade_6" parent="." index="0" unique_id=510859479]
+surface_material_override/0 = SubResource("StandardMaterial3D_hmvw8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1490543390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.026123047, 0.9920502, 0)
+shape = SubResource("BoxShape3D_xtms2")

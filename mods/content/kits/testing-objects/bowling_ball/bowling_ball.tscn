@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dqki0qsre27uy"]
+
+[ext_resource type="PackedScene" uid="uid://dlfvsb3qa24jf" path="res://mods/content/kits/testing-objects/bowling_ball/bowling_ball.gltf" id="1_1uet8"]
+[ext_resource type="Texture2D" uid="uid://br4e5itrxrwm4" path="res://mods/content/kits/testing-objects/bowling_ball/texture/bowling_ball_DefaultMaterial_BaseColor.png" id="2_q642e"]
+[ext_resource type="Texture2D" uid="uid://do00o3exvdqn5" path="res://mods/content/kits/testing-objects/bowling_ball/texture/bowling_ball_DefaultMaterial_Normal.png" id="3_6hmum"]
+[ext_resource type="Texture2D" uid="uid://qiy1fk6onejg" path="res://mods/content/kits/testing-objects/bowling_ball/texture/bowling_ball_DefaultMaterial_Metallic.png" id="3_q642e"]
+[ext_resource type="Texture2D" uid="uid://nprplnwh5b4u" path="res://mods/content/kits/testing-objects/bowling_ball/texture/bowling_ball_DefaultMaterial_Roughness.png" id="4_f7j3m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v332j"]
+albedo_texture = ExtResource("2_q642e")
+metallic = 1.0
+metallic_texture = ExtResource("3_q642e")
+roughness_texture = ExtResource("4_f7j3m")
+normal_enabled = true
+normal_texture = ExtResource("3_6hmum")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_l7vxe"]
+radius = 0.108994596
+
+[node name="bowling_ball" unique_id=646402453 instance=ExtResource("1_1uet8")]
+
+[node name="BowlingBall" parent="." index="0" unique_id=1534921670]
+surface_material_override/0 = SubResource("StandardMaterial3D_v332j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1276872005]
+shape = SubResource("SphereShape3D_l7vxe")

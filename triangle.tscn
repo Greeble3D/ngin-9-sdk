@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dvh4tfotpjkvy"]
+
+[ext_resource type="PackedScene" uid="uid://o610d68fpjk8" path="res://mods/content/kits/testing-objects/pool_table/triangle.gltf" id="1_4roi2"]
+[ext_resource type="Material" uid="uid://cps8kqag8hphx" path="res://mods/content/kits/testing-objects/pool_table/pool_table.tres" id="2_6snes"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4roi2"]
+size = Vector3(0.016418457, 0.036621094, 0.35131836)
+
+[node name="triangle" unique_id=1387288797 instance=ExtResource("1_4roi2")]
+
+[node name="Triangle" parent="." index="0" unique_id=1561539766]
+surface_material_override/0 = ExtResource("2_6snes")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1321425530]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10256958, 0.017822266, 0)
+shape = SubResource("BoxShape3D_4roi2")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2" unique_id=1865350501]
+transform = Transform3D(0.5050097, 0, -0.8631137, 0, 1, 0, 0.8631137, 0, 0.5050097, 0.04945673, 0.017822266, 0.090567976)
+shape = SubResource("BoxShape3D_4roi2")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="3" unique_id=1451577435]
+transform = Transform3D(-0.5072977, 0, -0.86177087, 0, 1, 0, 0.86177087, 0, -0.5072977, 0.05001214, 0.017822266, -0.093110636)
+shape = SubResource("BoxShape3D_4roi2")

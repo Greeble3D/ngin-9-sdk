@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://d0hifekgstvu7"]
+
+[ext_resource type="PackedScene" uid="uid://5mfx3sfa083s" path="res://mods/content/kits/prototyping-objects/block_plate_16x16.tscn" id="1_tjxo2"]
+[ext_resource type="PackedScene" uid="uid://csxywy1d0f3ps" path="res://mods/content/kits/testing-objects/dumpster/dumpster_1/dumpster.tscn" id="2_qk16d"]
+[ext_resource type="PackedScene" uid="uid://4jrxngpuxpc6" path="res://mods/content/kits/testing-objects/dumpster/dumpster_2/Dumpster_2.tscn" id="3_qfsj8"]
+[ext_resource type="PackedScene" uid="uid://dabjigy0d8b0n" path="res://mods/content/kits/testing-objects/pool_table/table.tscn" id="4_vko3j"]
+[ext_resource type="PackedScene" uid="uid://3yntnike5wh8" path="res://mods/content/kits/testing-objects/pool_table/1_ball.tscn" id="5_cuy6m"]
+[ext_resource type="PackedScene" uid="uid://dem0pf1bvaf8s" path="res://mods/content/kits/testing-objects/pool_table/2_ball.tscn" id="6_0wug2"]
+[ext_resource type="PackedScene" uid="uid://v27giqmdt1rt" path="res://mods/content/kits/testing-objects/pool_table/3_ball.tscn" id="7_wam6j"]
+[ext_resource type="PackedScene" uid="uid://mjeuwck1b061" path="res://mods/content/kits/testing-objects/pool_table/4_ball.tscn" id="8_bmeji"]
+[ext_resource type="PackedScene" uid="uid://c30vpd5hglnkh" path="res://mods/content/kits/testing-objects/wood_crate/wooden_crate.tscn" id="8_wam6j"]
+[ext_resource type="PackedScene" uid="uid://hbgn7h8rvn6n" path="res://mods/content/kits/testing-objects/pool_table/5_ball.tscn" id="9_4p353"]
+[ext_resource type="PackedScene" uid="uid://br48otmv7lqkh" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Drum_1/traffic_drum_1.tscn" id="10_4p353"]
+[ext_resource type="PackedScene" uid="uid://dfwujiaebtiv1" path="res://mods/content/kits/testing-objects/pool_table/6_ball.tscn" id="10_qhstt"]
+[ext_resource type="PackedScene" uid="uid://ccfdjaxenwc7w" path="res://mods/content/kits/testing-objects/pool_table/7_ball.tscn" id="11_7wgvl"]
+[ext_resource type="PackedScene" uid="uid://ck1wciswbtga0" path="res://mods/content/kits/testing-objects/traffic_control_pack/Traffic_Cone_2/Traffic_Cone_2.gltf" id="11_qhstt"]
+[ext_resource type="PackedScene" uid="uid://4s0e2toe4fl1" path="res://mods/content/kits/testing-objects/wood_pallet/wood_pallet.tscn" id="12_0wug2"]
+[ext_resource type="PackedScene" uid="uid://x8551164ogim" path="res://mods/content/kits/testing-objects/pool_table/8_ball.tscn" id="12_vqhel"]
+[ext_resource type="PackedScene" uid="uid://dmmqttx7mwf7n" path="res://mods/content/kits/testing-objects/pool_table/9_ball.tscn" id="13_m13vw"]
+[ext_resource type="PackedScene" uid="uid://dqki0qsre27uy" path="res://mods/content/kits/testing-objects/bowling_ball/bowling_ball.tscn" id="13_qhstt"]
+[ext_resource type="PackedScene" uid="uid://dvd0ngev0x0k1" path="res://mods/content/kits/testing-objects/pool_table/10_ball.tscn" id="14_3yim6"]
+[ext_resource type="PackedScene" uid="uid://cypuyggdqxfyx" path="res://mods/content/kits/testing-objects/pool_table/11_ball.tscn" id="15_3rbuj"]
+[ext_resource type="PackedScene" uid="uid://w4ywdyljc560" path="res://mods/content/kits/testing-objects/pool_table/12_ball.tscn" id="16_eocro"]
+[ext_resource type="PackedScene" uid="uid://bp0e2ru2w6lj6" path="res://mods/content/kits/testing-objects/pool_table/13_ball.tscn" id="17_k3jlj"]
+[ext_resource type="PackedScene" uid="uid://tnq8rffeeifm" path="res://mods/content/kits/testing-objects/pool_table/14_ball.tscn" id="18_3npxd"]
+[ext_resource type="PackedScene" uid="uid://bsmsjnp0chbkg" path="res://mods/content/kits/testing-objects/pool_table/15_ball.tscn" id="19_gr0o4"]
+[ext_resource type="PackedScene" uid="uid://dqd581roba201" path="res://mods/content/kits/testing-objects/pool_table/pool_stick.tscn" id="20_cuy6m"]
+
+[node name="Node3D" type="Node3D" unique_id=621170799]
+
+[node name="BLOCK_Plate_16x16x1" parent="." unique_id=1405619511 instance=ExtResource("1_tjxo2")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1822251263]
+transform = Transform3D(0.31155556, 0.8112492, -0.4947806, 0, 0.52069676, 0.8537417, 0.9502279, -0.265988, 0.16222598, 0, 5.3814697, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=978548930]
+transform = Transform3D(1, 0, 0, 0, 0.678852, 0.7342751, 0, -0.7342751, 0.678852, 0, 4.1152344, 4.6377563)
+
+[node name="Dumpster" parent="." unique_id=446372707 instance=ExtResource("2_qk16d")]
+transform = Transform3D(-0.080950215, 0.5513268, 0.83035326, 0.8054502, -0.45453936, 0.3803216, 0.5871095, 0.69959444, -0.40727141, 0, 5.5304565, 0.16149902)
+
+[node name="Dumpster_2" parent="." unique_id=469103046 instance=ExtResource("3_qfsj8")]
+transform = Transform3D(0.6547804, 0.7558192, 0, -0.0061735967, 0.005348303, -0.9999666, -0.755794, 0.6547585, 0.008168086, 0.96443176, 8.288452, 0)
+
+[node name="PoolTable" parent="." unique_id=1574769169 instance=ExtResource("4_vko3j")]
+transform = Transform3D(0.99518645, 0.097999774, 0, -0.097999774, 0.99518645, 0, 0, 0, 1, -0.07281494, 0.4509722, 2.9189453)
+
+[node name="1_ball" parent="." unique_id=2123811928 instance=ExtResource("5_cuy6m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33032227, 2.1636353, 3.1705322)
+
+[node name="2_ball" parent="." unique_id=479968413 instance=ExtResource("6_0wug2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="3_ball" parent="." unique_id=1196722081 instance=ExtResource("7_wam6j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="wooden_crate" parent="." unique_id=1444808036 instance=ExtResource("8_wam6j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.8029785, 0)
+
+[node name="4_ball" parent="." unique_id=1631050261 instance=ExtResource("8_bmeji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="Traffic_Drum_1" parent="." unique_id=732231172 instance=ExtResource("10_4p353")]
+transform = Transform3D(1, 0, 0, 0, 0.485649, -0.8741539, 0, 0.8741539, 0.485649, 0.37927246, 11.704102, 0)
+
+[node name="Traffic_Cone_22" parent="." unique_id=1034897977 instance=ExtResource("11_qhstt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.762756, 0)
+
+[node name="5_ball" parent="." unique_id=685069248 instance=ExtResource("9_4p353")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="bowling_ball" parent="." unique_id=646402453 instance=ExtResource("13_qhstt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3793335, 12.878662, 0)
+
+[node name="bowling_ball2" parent="." unique_id=948264730 instance=ExtResource("13_qhstt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.72369385, 12.878662, 0)
+
+[node name="bowling_ball3" parent="." unique_id=1897323819 instance=ExtResource("13_qhstt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.72369385, 14.702881, 0)
+
+[node name="bowling_ball4" parent="." unique_id=1058003023 instance=ExtResource("13_qhstt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9916992, 14.702881, 0)
+
+[node name="bowling_ball5" parent="." unique_id=1046103818 instance=ExtResource("13_qhstt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9916992, 14.141541, 0)
+
+[node name="bowling_ball6" parent="." unique_id=888656265 instance=ExtResource("13_qhstt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6970215, 14.141541, 0)
+
+[node name="6_ball" parent="." unique_id=779792994 instance=ExtResource("10_qhstt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="7_ball" parent="." unique_id=396108432 instance=ExtResource("11_7wgvl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="wood_pallet" parent="." unique_id=2073760360 instance=ExtResource("12_0wug2")]
+transform = Transform3D(0.8208702, -0.5711148, 0, 0.4927506, 0.70823646, 0.505567, -0.2887368, -0.4150049, 0.86278737, 0.19540405, 9.311632, 0)
+
+[node name="8_ball" parent="." unique_id=226256856 instance=ExtResource("12_vqhel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="9_ball" parent="." unique_id=1805819555 instance=ExtResource("13_m13vw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="10_ball" parent="." unique_id=675095821 instance=ExtResource("14_3yim6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="11_ball" parent="." unique_id=370025257 instance=ExtResource("15_3rbuj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="12_ball" parent="." unique_id=1193203023 instance=ExtResource("16_eocro")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="13_ball" parent="." unique_id=716655581 instance=ExtResource("17_k3jlj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="14_ball" parent="." unique_id=1353250102 instance=ExtResource("18_3npxd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="15_ball" parent="." unique_id=313177106 instance=ExtResource("19_gr0o4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1636353, 3.1705322)
+
+[node name="pool_stick" parent="." unique_id=2002076137 instance=ExtResource("20_cuy6m")]
+transform = Transform3D(-0.15237544, -0.97289854, 0.17392603, 0.15196614, 0.1508244, 0.97681016, -0.9765696, 0.17527276, 0.1248657, 0.18908691, 3.6833773, 3.4238281)

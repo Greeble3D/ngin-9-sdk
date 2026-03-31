@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dmcu1p4akxhf"]
+
+[ext_resource type="PackedScene" uid="uid://kfis374qr6it" path="res://mods/content/kits/prototyping-objects/sources/STRUCTURE_Pillar_1x1x3.blend" id="1_pm1e5"]
+[ext_resource type="Material" uid="uid://drug21gp8mjuc" path="res://mods/content/kits/prototyping-objects/materials/prototype-grid-material.tres" id="2_5uond"]
+
+[node name="STRUCTURE_Pillar_1x1x3" unique_id=703140254 instance=ExtResource("1_pm1e5")]
+
+[node name="STRUCTURE_Pillar_1x1x3" parent="." index="0" unique_id=15203681]
+surface_material_override/0 = ExtResource("2_5uond")
