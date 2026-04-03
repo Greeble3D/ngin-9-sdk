@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ban7bppid6qk4"]
+
+[ext_resource type="PackedScene" uid="uid://qjhmhled7rd8" path="res://mods/content/kits/prototyping-objects/sources-gltf/galtonboard-back-8.gltf" id="1_s5ygq"]
+[ext_resource type="Material" uid="uid://drug21gp8mjuc" path="res://mods/content/kits/prototyping-objects/materials/prototype-grid-material.tres" id="2_n0s4i"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hu60p"]
+size = Vector3(8, 6, 0.5)
+
+[node name="galtonboard-back-8" unique_id=2081060187 instance=ExtResource("1_s5ygq")]
+
+[node name="GaltonBoard-Back-8" parent="." index="0" unique_id=694762257]
+surface_material_override/0 = ExtResource("2_n0s4i")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1262994077]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1397636311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -0.25)
+shape = SubResource("BoxShape3D_hu60p")

@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://dtg06g4anjera"]
+
+[ext_resource type="PackedScene" uid="uid://v45blw38snhj" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/source/hopper.gltf" id="1_ofmk5"]
+[ext_resource type="Material" uid="uid://bu4bly8kq6s6l" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/material/release_hopper.tres" id="2_rvhds"]
+[ext_resource type="PackedScene" uid="uid://b6jtkvpvpcb6t" path="res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/hopper_lid_left.tscn" id="3_e16m6"]
+[ext_resource type="PackedScene" uid="uid://c500oet8qeudy" path="res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/hopper_lid_right.tscn" id="4_gq1ni"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ofmk5"]
+size = Vector3(0.25735474, 1.9973755, 5.01001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rvhds"]
+size = Vector3(4.472351, 1.9973755, 0.25691223)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5p0qm"]
+size = Vector3(0.27942657, 0.5909319, 0.96191406)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gq1ni"]
+size = Vector3(0.27942657, 0.6188755, 0.96191406)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e16m6"]
+size = Vector3(2.421997, 0.2, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_msroq"]
+size = Vector3(0.13903046, 1.8436279, 3.9541016)
+
+[node name="hopper" unique_id=1712322518 instance=ExtResource("1_ofmk5")]
+
+[node name="Hopper" parent="." index="0" unique_id=1162696068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_rvhds")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=720635680]
+
+[node name="Container-CollisionShape3D-1" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=770846089]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3783112, 1.0018005, 0)
+shape = SubResource("BoxShape3D_ofmk5")
+
+[node name="Container-CollisionShape3D-2" type="CollisionShape3D" parent="StaticBody3D" index="1" unique_id=981640212]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.378, 1.002, 0)
+shape = SubResource("BoxShape3D_ofmk5")
+
+[node name="Container-CollisionShape3D-3" type="CollisionShape3D" parent="StaticBody3D" index="2" unique_id=1912316182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0017836094, 1.002, -2.4229584)
+shape = SubResource("BoxShape3D_rvhds")
+
+[node name="Container-CollisionShape3D-4" type="CollisionShape3D" parent="StaticBody3D" index="3" unique_id=1100912010]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002, 1.002, 2.3784063)
+shape = SubResource("BoxShape3D_rvhds")
+
+[node name="Container-CollisionShape3D-5" type="CollisionShape3D" parent="StaticBody3D" index="4" unique_id=2140855448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6404533, 0.29800558, 0)
+shape = SubResource("BoxShape3D_5p0qm")
+
+[node name="Container-CollisionShape3D-6" type="CollisionShape3D" parent="StaticBody3D" index="5" unique_id=1293444476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.64, 0.30485523, 0)
+shape = SubResource("BoxShape3D_gq1ni")
+
+[node name="HopperLid_1" parent="." index="2" unique_id=1819958700 instance=ExtResource("3_e16m6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.1, 0)
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HopperLid_1" index="1" unique_id=1267373800]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2377319, 0, 0)
+shape = SubResource("BoxShape3D_e16m6")
+
+[node name="HopperLid_2" parent="." index="3" unique_id=1937094624 instance=ExtResource("4_gq1ni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.1, 0)
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HopperLid_2" index="1" unique_id=1817151392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2217835, 0, 0)
+shape = SubResource("BoxShape3D_e16m6")
+
+[node name="Activate_1" type="Area3D" parent="." index="4" unique_id=1915617162]
+collision_layer = 4
+collision_mask = 7
+
+[node name="CollisionShape3D-1" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=732083295]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6847878, 0.92230225, 0)
+shape = SubResource("BoxShape3D_msroq")
+
+[node name="CollisionShape3D-2" type="CollisionShape3D" parent="Activate_1" index="1" unique_id=380595571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.635, 0.922, 0)
+shape = SubResource("BoxShape3D_msroq")
+
+[node name="CollisionShape3D-3" type="CollisionShape3D" parent="Activate_1" index="2" unique_id=5945860]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.922, -2.6354825)
+shape = SubResource("BoxShape3D_msroq")
+
+[node name="CollisionShape3D-4" type="CollisionShape3D" parent="Activate_1" index="3" unique_id=1938558373]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.922, 2.635)
+shape = SubResource("BoxShape3D_msroq")
+
+[node name="HingeJointLeft" type="HingeJoint3D" parent="." index="5" unique_id=1576952013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.1, 0)
+node_a = NodePath("../StaticBody3D")
+node_b = NodePath("../HopperLid_1")
+exclude_nodes_from_collision = false
+angular_limit/enable = true
+angular_limit/lower = -2.443461
+
+[node name="HingeJoint3DRight" type="HingeJoint3D" parent="." index="6" unique_id=1045589373]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.5, -0.1, 0)
+node_a = NodePath("../StaticBody3D")
+node_b = NodePath("../HopperLid_2")
+exclude_nodes_from_collision = false
+angular_limit/enable = true
+angular_limit/lower = -2.443461

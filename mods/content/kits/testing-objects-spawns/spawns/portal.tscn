@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b0eq7t3xlmsrp"]
+
+[ext_resource type="PackedScene" uid="uid://bcpxbtbg60l7o" path="res://mods/content/kits/testing-objects-spawns/spawns/portal/portal.gltf" id="1_1jqjd"]
+[ext_resource type="Material" uid="uid://ckbtbbs2otxdu" path="res://mods/content/kits/testing-objects-spawns/spawns/materials/spawn_control.tres" id="2_5p8x7"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_5p8x7"]
+height = 0.8306351
+
+[node name="portal" unique_id=1953676371 instance=ExtResource("1_1jqjd")]
+
+[node name="Portal" parent="." index="0" unique_id=320368619]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.005, 0)
+surface_material_override/0 = ExtResource("2_5p8x7")
+
+[node name="Portal_1" type="Node3D" parent="." index="1" unique_id=318757840]
+
+[node name="Area3D" type="Area3D" parent="." index="2" unique_id=1478072275]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0" unique_id=1021778069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42160416, 0)
+shape = SubResource("CylinderShape3D_5p8x7")

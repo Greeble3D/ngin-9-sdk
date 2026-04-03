@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dke53l75fq8pp"]
+
+[ext_resource type="PackedScene" uid="uid://bjru8gjxh4yt3" path="res://mods/content/kits/testing-objects/metal_ball/source/metal_ball.gltf" id="1_egfxv"]
+[ext_resource type="Texture2D" uid="uid://c4cb3d1wu57w2" path="res://mods/content/kits/testing-objects/metal_ball/textures/tech/metal_ball_DefaultMaterial_BaseColor.png" id="2_0a6w0"]
+[ext_resource type="Texture2D" uid="uid://sjyt2dllxt30" path="res://mods/content/kits/testing-objects/metal_ball/textures/tech/metal_ball_DefaultMaterial_Metallic.png" id="3_e50pw"]
+[ext_resource type="Texture2D" uid="uid://8qplplxx5hdp" path="res://mods/content/kits/testing-objects/metal_ball/textures/tech/metal_ball_DefaultMaterial_Normal.png" id="4_7acdu"]
+[ext_resource type="Texture2D" uid="uid://dmrf3nac7bkjx" path="res://mods/content/kits/testing-objects/metal_ball/textures/tech/metal_ball_DefaultMaterial_Roughness.png" id="5_ol6ga"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abtyv"]
+albedo_texture = ExtResource("2_0a6w0")
+metallic = 1.0
+metallic_texture = ExtResource("3_e50pw")
+roughness_texture = ExtResource("5_ol6ga")
+normal_enabled = true
+normal_texture = ExtResource("4_7acdu")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_egfxv"]
+
+[node name="metal_ball_1" unique_id=1806166850 instance=ExtResource("1_egfxv")]
+
+[node name="MetalBall" parent="." index="0" unique_id=225206603]
+surface_material_override/0 = SubResource("StandardMaterial3D_abtyv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1527077702]
+shape = SubResource("SphereShape3D_egfxv")

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://kbna88u8wcou"]
+
+[ext_resource type="PackedScene" uid="uid://cplhh5xyms3o6" path="res://mods/content/kits/testing-objects-spawns/spawns/item_spawn/item_spawn_spawn.gltf" id="1_aufsn"]
+[ext_resource type="Material" uid="uid://ckbtbbs2otxdu" path="res://mods/content/kits/testing-objects-spawns/spawns/materials/spawn_control.tres" id="2_lwoqq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lwoqq"]
+size = Vector3(0.51000977, 0.2770691, 0.23022461)
+
+[node name="ItemSpawn" unique_id=1662225738 instance=ExtResource("1_aufsn")]
+
+[node name="Plane" parent="." index="0" unique_id=2051478308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.005, 0)
+surface_material_override/0 = ExtResource("2_lwoqq")
+
+[node name="Item_Spawn_1" type="Node3D" parent="." index="1" unique_id=1482478230]
+
+[node name="Area3D" type="Area3D" parent="." index="2" unique_id=249305609]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0" unique_id=238371405]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.12345886, 0)
+shape = SubResource("BoxShape3D_lwoqq")

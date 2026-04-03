@@ -1,0 +1,11 @@
+Model Information:
+* title:	Grenade Keyboard low poly
+* source:	https://sketchfab.com/3d-models/grenade-keyboard-low-poly-f1423e3e0656409e9ef4e0c82fd97618
+* author:	Adriancgmask (https://sketchfab.com/Adriancgmask)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Grenade Keyboard low poly" (https://sketchfab.com/3d-models/grenade-keyboard-low-poly-f1423e3e0656409e9ef4e0c82fd97618) by Adriancgmask (https://sketchfab.com/Adriancgmask) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

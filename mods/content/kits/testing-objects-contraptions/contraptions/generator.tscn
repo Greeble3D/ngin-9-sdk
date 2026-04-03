@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dns6rb0fjhdfj"]
+
+[ext_resource type="PackedScene" uid="uid://ddct805ea1sjn" path="res://mods/content/kits/testing-objects-contraptions/contraptions/generator/source/generator.gltf" id="1_v3pkf"]
+[ext_resource type="Texture2D" uid="uid://cjq5hcbeo5e27" path="res://mods/content/kits/testing-objects-contraptions/contraptions/generator/textures/generator_Material_0_BaseColor.png" id="2_bk8j4"]
+[ext_resource type="Texture2D" uid="uid://yxkh3fti8kdh" path="res://mods/content/kits/testing-objects-contraptions/contraptions/generator/textures/generator_Material_0_Metallic.png" id="3_kcy7m"]
+[ext_resource type="Texture2D" uid="uid://bfv0p7xb36nia" path="res://mods/content/kits/testing-objects-contraptions/contraptions/generator/textures/generator_Material_0_Normal.png" id="4_82d3c"]
+[ext_resource type="Texture2D" uid="uid://dh7too2ykw60d" path="res://mods/content/kits/testing-objects-contraptions/contraptions/generator/textures/generator_Material_0_Roughness.png" id="5_n8tn7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a32fi"]
+albedo_texture = ExtResource("2_bk8j4")
+metallic = 1.0
+metallic_texture = ExtResource("3_kcy7m")
+roughness_texture = ExtResource("5_n8tn7")
+normal_enabled = true
+normal_texture = ExtResource("4_82d3c")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v3pkf"]
+size = Vector3(1.1885986, 0.99420166, 0.79003906)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bk8j4"]
+size = Vector3(0.5151367, 0.28147888, 0.053955078)
+
+[node name="generator" unique_id=1776424060 instance=ExtResource("1_v3pkf")]
+
+[node name="Generator" parent="." index="0" unique_id=124438893]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0048828125, -0.0022583008, 0.0059814453)
+surface_material_override/0 = SubResource("StandardMaterial3D_a32fi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=907927870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05999756, 0.50302124, 0)
+shape = SubResource("BoxShape3D_v3pkf")
+
+[node name="Activate_1" type="Area3D" parent="." index="2" unique_id=949716658]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=471689640]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24243164, 0.6697159, 0.42687988)
+shape = SubResource("BoxShape3D_bk8j4")

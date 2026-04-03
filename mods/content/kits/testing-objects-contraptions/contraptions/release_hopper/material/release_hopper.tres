@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bu4bly8kq6s6l"]
+
+[ext_resource type="Texture2D" uid="uid://r61twrfjhnl1" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/textures/hopper_DefaultMaterial_BaseColor.png" id="1_xxhll"]
+[ext_resource type="Texture2D" uid="uid://dyub6ardkny1d" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/textures/hopper_DefaultMaterial_Metallic.png" id="2_1frne"]
+[ext_resource type="Texture2D" uid="uid://b7nryo2k8cntq" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/textures/hopper_DefaultMaterial_Normal.png" id="3_6y3oq"]
+[ext_resource type="Texture2D" uid="uid://dp2auwusbn42i" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/textures/hopper_DefaultMaterial_Roughness.png" id="4_7jqy5"]
+
+[resource]
+albedo_texture = ExtResource("1_xxhll")
+metallic = 1.0
+metallic_texture = ExtResource("2_1frne")
+roughness_texture = ExtResource("4_7jqy5")
+normal_enabled = true
+normal_texture = ExtResource("3_6y3oq")

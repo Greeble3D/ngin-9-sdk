@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://csxywy1d0f3ps"]
+
+[ext_resource type="PackedScene" uid="uid://dad0kb8pe3uek" path="res://mods/content/kits/testing-objects-contraptions/contraptions/dumpster/dumpster_1/Dumpstser.gltf" id="1_sfph7"]
+[ext_resource type="Material" uid="uid://bmxjf27ugd7dl" path="res://mods/content/kits/testing-objects-contraptions/contraptions/dumpster/dumpster_1/dumpster_1.tres" id="2_ekqx2"]
+[ext_resource type="PackedScene" uid="uid://bm0vlix1ub7qu" path="res://mods/content/kits/testing-objects-contraptions/contraptions/dumpster/dumpster_1/Lid_Left.gltf" id="2_px75u"]
+[ext_resource type="PackedScene" uid="uid://jckguuujsc5x" path="res://mods/content/kits/testing-objects-contraptions/contraptions/dumpster/dumpster_1/Lid_Right.gltf" id="3_ekqx2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wps8m"]
+size = Vector3(0.060455322, 0.97384644, 1.1517944)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2qshx"]
+size = Vector3(1.6752777, 0.97384644, 0.052381516)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_klu7b"]
+size = Vector3(1.8005943, 0.21025848, 1.1448431)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o0jm0"]
+size = Vector3(0.9156647, 0.062494278, 1.2976227)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ksaqc"]
+size = Vector3(0.9156647, 0.062494278, 1.296524)
+
+[node name="Dumpster" type="Node3D" unique_id=446372707]
+
+[node name="Dumpstser" parent="." unique_id=1046182505 instance=ExtResource("1_sfph7")]
+
+[node name="Dumpster_1" parent="Dumpstser" index="0" unique_id=2104632727]
+surface_material_override/0 = ExtResource("2_ekqx2")
+
+[node name="CollisionShape3D_1" type="CollisionShape3D" parent="Dumpstser" unique_id=337525810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87098694, 0.7100067, -0.0027770996)
+shape = SubResource("BoxShape3D_wps8m")
+
+[node name="CollisionShape3D_2" type="CollisionShape3D" parent="Dumpstser" unique_id=560425469]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.871, 0.71, -0.003)
+shape = SubResource("BoxShape3D_wps8m")
+
+[node name="CollisionShape3D_3" type="CollisionShape3D" parent="Dumpstser" unique_id=1783987989]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00045615435, 0.71, 0.55628705)
+shape = SubResource("BoxShape3D_2qshx")
+
+[node name="CollisionShape3D_4" type="CollisionShape3D" parent="Dumpstser" unique_id=245250147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00045615435, 0.71, -0.5516336)
+shape = SubResource("BoxShape3D_2qshx")
+
+[node name="CollisionShape3D_5" type="CollisionShape3D" parent="Dumpstser" unique_id=250644183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004333794, 0.106144845, -0.0054028034)
+shape = SubResource("BoxShape3D_klu7b")
+
+[node name="Lid_Left" parent="." unique_id=2024747927 instance=ExtResource("2_px75u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4635849, 1.4242394, -0.62278813)
+
+[node name="Dumpster_1_Lid_Left" parent="Lid_Left" index="0" unique_id=1763159968]
+surface_material_override/0 = ExtResource("2_ekqx2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lid_Left" unique_id=556066788]
+transform = Transform3D(1, 0, 0, 0, 0.98674834, -0.1622583, 0, 0.1622583, 0.98674834, 0.010643572, -0.07672298, 0.66824543)
+shape = SubResource("BoxShape3D_o0jm0")
+
+[node name="Lid_Right" parent="." unique_id=831161952 instance=ExtResource("3_ekqx2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.464, 1.424, -0.623)
+
+[node name="Dumpster_1_Lid_Right" parent="Lid_Right" index="0" unique_id=1726984811]
+surface_material_override/0 = ExtResource("2_ekqx2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lid_Right" unique_id=570925841]
+transform = Transform3D(1, 0, 0, 0, 0.98674834, -0.1622583, 0, 0.1622583, 0.98674834, 0.0066604614, -0.07639456, 0.6679153)
+shape = SubResource("BoxShape3D_ksaqc")
+
+[node name="HingeJoint3DLeft" type="HingeJoint3D" parent="." unique_id=1255533323]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.464, 1.424, -0.623)
+node_a = NodePath("../Dumpstser")
+node_b = NodePath("../Lid_Left")
+exclude_nodes_from_collision = false
+angular_limit/enable = true
+angular_limit/lower = 0.0
+motor/target_velocity = 3.4906585
+
+[node name="HingeJoint3DRight" type="HingeJoint3D" parent="." unique_id=1908664068]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.464, 1.424, -0.623)
+node_a = NodePath("../Dumpstser")
+node_b = NodePath("../Lid_Right")
+exclude_nodes_from_collision = false
+angular_limit/enable = true
+angular_limit/lower = 0.0
+motor/target_velocity = 3.4906585
+
+[editable path="Dumpstser"]
+[editable path="Lid_Left"]
+[editable path="Lid_Right"]

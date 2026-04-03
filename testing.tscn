@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ckgcor4gpd71n"]
+
+[ext_resource type="PackedScene" uid="uid://csxywy1d0f3ps" path="res://mods/content/kits/testing-objects-contraptions/contraptions/dumpster/dumpster_1/dumpster.tscn" id="1_qrja6"]
+[ext_resource type="PackedScene" uid="uid://4jrxngpuxpc6" path="res://mods/content/kits/testing-objects-contraptions/contraptions/dumpster/dumpster_2/Dumpster_2.tscn" id="2_co24e"]
+
+[node name="Node3D" type="Node3D" unique_id=708147401]
+
+[node name="Dumpster" parent="." unique_id=446372707 instance=ExtResource("1_qrja6")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=308449513]
+transform = Transform3D(1, 0, 0, 0, 0.83389544, 0.55192244, 0, -0.55192244, 0.83389544, 0, 1.7872627, 1.4569407)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=976030919]
+transform = Transform3D(1, 0, 0, 0, 0.83389544, 0.55192244, 0, -0.55192244, 0.83389544, 0, 2.010254, 2.0219116)
+
+[node name="Dumpster_2" parent="." unique_id=469103046 instance=ExtResource("2_co24e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.831543, 0, 0.20751953)

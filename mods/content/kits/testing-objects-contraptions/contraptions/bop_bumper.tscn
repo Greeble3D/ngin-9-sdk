@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://lnucmk81rt6i"]
+
+[ext_resource type="PackedScene" uid="uid://bnv277d8g243q" path="res://mods/content/kits/testing-objects-contraptions/contraptions/bop_bumper/source/bop_bumper.gltf" id="1_d852y"]
+[ext_resource type="Texture2D" uid="uid://dmtta3uw6d867" path="res://mods/content/kits/testing-objects-contraptions/contraptions/bop_bumper/textures/bop_bumper_texture_DefaultMaterial_BaseColor.png" id="2_xk2ax"]
+[ext_resource type="Texture2D" uid="uid://shw3vwv8rhd7" path="res://mods/content/kits/testing-objects-contraptions/contraptions/bop_bumper/textures/bop_bumper_texture_DefaultMaterial_Metallic.png" id="3_aucen"]
+[ext_resource type="Texture2D" uid="uid://cjr5cm84bei88" path="res://mods/content/kits/testing-objects-contraptions/contraptions/bop_bumper/textures/bop_bumper_texture_DefaultMaterial_Normal.png" id="4_uxkjf"]
+[ext_resource type="Texture2D" uid="uid://du00orraor260" path="res://mods/content/kits/testing-objects-contraptions/contraptions/bop_bumper/textures/bop_bumper_texture_DefaultMaterial_Roughness.png" id="5_x1eef"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rekey"]
+albedo_texture = ExtResource("2_xk2ax")
+metallic = 1.0
+metallic_texture = ExtResource("3_aucen")
+roughness_texture = ExtResource("5_x1eef")
+normal_enabled = true
+normal_texture = ExtResource("4_uxkjf")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jjln4"]
+size = Vector3(0.5917969, 0.59659195, 4.0004883)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2jdpw"]
+size = Vector3(1.1988525, 0.48817444, 3.9980469)
+
+[node name="bop_bumper" unique_id=1061942676 instance=ExtResource("1_d852y")]
+
+[node name="BopperBumper" parent="." index="0" unique_id=1586817727]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.111694336, -0.011474609, 0.24609375)
+surface_material_override/0 = SubResource("StandardMaterial3D_rekey")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1416222692]
+
+[node name="CollisionShape3D-2" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1425024392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11212158, 0.7880459, 0.24682617)
+shape = SubResource("BoxShape3D_jjln4")
+
+[node name="Bop_Bumper_1" type="StaticBody3D" parent="." index="2" unique_id=444663449]
+
+[node name="CollisionShape3D-1" type="CollisionShape3D" parent="Bop_Bumper_1" index="0" unique_id=861661871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11212158, 0.24564362, 0.24560547)
+shape = SubResource("BoxShape3D_2jdpw")

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bpajgd5i5bdlv"]
+
+[ext_resource type="PackedScene" uid="uid://b02qv8rnlse0i" path="res://mods/content/kits/testing-objects-contraptions/contraptions/grenade/sources/grenade.gltf" id="1_yhh75"]
+[ext_resource type="Texture2D" uid="uid://st6plakyjtnl" path="res://mods/content/kits/testing-objects-contraptions/contraptions/grenade/textures/grenade_08_-_Default_BaseColor.png" id="2_sfqw3"]
+[ext_resource type="Texture2D" uid="uid://bquwumsxjmhm7" path="res://mods/content/kits/testing-objects-contraptions/contraptions/grenade/textures/grenade_08_-_Default_Metallic.png" id="3_5y8fp"]
+[ext_resource type="Texture2D" uid="uid://dovumiph33juh" path="res://mods/content/kits/testing-objects-contraptions/contraptions/grenade/textures/grenade_08_-_Default_Normal.png" id="4_0q03u"]
+[ext_resource type="Texture2D" uid="uid://ddtyn1fgt7tky" path="res://mods/content/kits/testing-objects-contraptions/contraptions/grenade/textures/grenade_08_-_Default_Roughness.png" id="5_n6ioj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cvuhq"]
+albedo_texture = ExtResource("2_sfqw3")
+metallic = 1.0
+metallic_texture = ExtResource("3_5y8fp")
+roughness_texture = ExtResource("5_n6ioj")
+normal_enabled = true
+normal_texture = ExtResource("4_0q03u")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yhh75"]
+radius = 0.07763672
+height = 0.23083115
+
+[node name="grenade" unique_id=1114846529 instance=ExtResource("1_yhh75")]
+
+[node name="safety_low_08 - Default_0" parent="." index="0" unique_id=373232471]
+surface_material_override/0 = SubResource("StandardMaterial3D_cvuhq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1373445366]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010925293, 0.099206924, 0.0012817383)
+shape = SubResource("CapsuleShape3D_yhh75")

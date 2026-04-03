@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dumtfiqba8h3f"]
+
+[ext_resource type="PackedScene" uid="uid://cspx16vj6j4aw" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/source/hopper_stand.gltf" id="1_rfhk5"]
+[ext_resource type="Material" uid="uid://bu4bly8kq6s6l" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/material/release_hopper.tres" id="2_ktphe"]
+
+[node name="hopper_stand" unique_id=2123342424 instance=ExtResource("1_rfhk5")]
+
+[node name="HopperStand" parent="." index="0" unique_id=589433748]
+surface_material_override/0 = ExtResource("2_ktphe")

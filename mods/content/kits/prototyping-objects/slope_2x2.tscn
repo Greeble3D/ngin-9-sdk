@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bpmjgj85ocuh7"]
+
+[ext_resource type="PackedScene" path="res://mods/content/kits/prototyping-objects/sources-gltf/slope-2x2.gltf" id="1_cuhgr"]
+[ext_resource type="Material" uid="uid://drug21gp8mjuc" path="res://mods/content/kits/prototyping-objects/materials/prototype-grid-material.tres" id="2_5nh5a"]
+
+[node name="slope-2x2" unique_id=423649240 instance=ExtResource("1_cuhgr")]
+
+[node name="Slope-2x2" parent="." index="0" unique_id=129277413]
+surface_material_override/0 = ExtResource("2_5nh5a")

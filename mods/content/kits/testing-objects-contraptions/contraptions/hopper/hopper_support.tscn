@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bh7lk0ai8obqg"]
+
+[ext_resource type="PackedScene" uid="uid://cdf8an1xv2ha0" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/source/hopper_support.gltf" id="1_44afq"]
+[ext_resource type="Material" uid="uid://bu4bly8kq6s6l" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/material/release_hopper.tres" id="2_lwdek"]
+
+[node name="hopper_support" unique_id=1356199410 instance=ExtResource("1_44afq")]
+
+[node name="HopperSupport" parent="." index="0" unique_id=1279546221]
+surface_material_override/0 = ExtResource("2_lwdek")

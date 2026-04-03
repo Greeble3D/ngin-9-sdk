@@ -5,5 +5,5 @@
 
 [node name="BLOCK_Plate_16x16x1" unique_id=1405619511 instance=ExtResource("1_jfbn6")]
 
-[node name="BLOCK_Plate_16x16x1" parent="." index="0" unique_id=1939036152]
+[node name="BLOCK_Plate_16x16x1" parent="." index="0" unique_id=1946529490]
 surface_material_override/0 = ExtResource("2_t8l0v")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c500oet8qeudy"]
+
+[ext_resource type="PackedScene" uid="uid://vx31rtog12v3" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/source/hopper_lid_right.gltf" id="1_glkw8"]
+[ext_resource type="Material" uid="uid://bu4bly8kq6s6l" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/material/release_hopper.tres" id="2_6a3i8"]
+
+[node name="hopper_lid_right" unique_id=1937094624 instance=ExtResource("1_glkw8")]
+
+[node name="LidRight" parent="." index="0" unique_id=950521986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_6a3i8")

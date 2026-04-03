@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://b27r6n7yipfg"]
+
+[ext_resource type="PackedScene" uid="uid://c1pl3ffv0m53s" path="res://mods/content/kits/testing-objects-contraptions/contraptions/vending_machine/source/vending_machine.gltf" id="1_6q36q"]
+[ext_resource type="Texture2D" uid="uid://gsktaux1bax0" path="res://mods/content/kits/testing-objects-contraptions/contraptions/vending_machine/textures/scene_mi_VendingMachines_01_01_BaseColor.png" id="2_cjmtp"]
+[ext_resource type="Texture2D" uid="uid://bjdjtgpmpjoyj" path="res://mods/content/kits/testing-objects-contraptions/contraptions/vending_machine/textures/scene_mi_VendingMachines_01_01_Metallic.png" id="3_6mw32"]
+[ext_resource type="Texture2D" uid="uid://de4un8v8pgjew" path="res://mods/content/kits/testing-objects-contraptions/contraptions/vending_machine/textures/scene_mi_VendingMachines_01_01_Emissive.png" id="3_cjmtp"]
+[ext_resource type="Texture2D" uid="uid://wy3roohtqwm5" path="res://mods/content/kits/testing-objects-contraptions/contraptions/vending_machine/textures/scene_mi_VendingMachines_01_01_Normal.png" id="4_py178"]
+[ext_resource type="Texture2D" uid="uid://cvxo1okrqf2di" path="res://mods/content/kits/testing-objects-contraptions/contraptions/vending_machine/textures/scene_mi_VendingMachines_01_01_Roughness.png" id="5_gm4kc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_du7fq"]
+albedo_texture = ExtResource("2_cjmtp")
+metallic = 1.0
+metallic_texture = ExtResource("3_6mw32")
+roughness_texture = ExtResource("5_gm4kc")
+emission_enabled = true
+emission_texture = ExtResource("3_cjmtp")
+normal_enabled = true
+normal_texture = ExtResource("4_py178")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6q36q"]
+size = Vector3(1.1289063, 1.9976807, 0.77783203)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cjmtp"]
+size = Vector3(0.20496368, 0.57894135, 0.041625977)
+
+[node name="vending_machine" unique_id=1699547004 instance=ExtResource("1_6q36q")]
+freeze = true
+
+[node name="VendingMachine" parent="." index="0" unique_id=1464908815]
+surface_material_override/0 = SubResource("StandardMaterial3D_du7fq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1808537659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0037231, 0.020751953)
+shape = SubResource("BoxShape3D_6q36q")
+
+[node name="Activate_1" type="Area3D" parent="." index="2" unique_id=240283794]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=1054926262]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.401165, 1.3850822, -0.4043579)
+shape = SubResource("BoxShape3D_cjmtp")

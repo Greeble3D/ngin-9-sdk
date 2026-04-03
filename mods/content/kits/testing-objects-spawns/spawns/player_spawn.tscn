@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cxoebxhpqavpr"]
+
+[ext_resource type="PackedScene" uid="uid://qy8qiuas7anh" path="res://mods/content/kits/testing-objects-spawns/spawns/player_spawn/player_spawn.gltf" id="1_cjx8b"]
+[ext_resource type="Material" uid="uid://ckbtbbs2otxdu" path="res://mods/content/kits/testing-objects-spawns/spawns/materials/spawn_control.tres" id="2_bl50t"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cjx8b"]
+height = 1.9536133
+
+[node name="player_spawn" unique_id=288024442 instance=ExtResource("1_cjx8b")]
+
+[node name="PlayerSpawn" parent="." index="0" unique_id=1937181979]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.005, 0)
+surface_material_override/0 = ExtResource("2_bl50t")
+
+[node name="Player_Spawn_1" type="Node3D" parent="." index="1" unique_id=998976265]
+
+[node name="Area3D" type="Area3D" parent="." index="2" unique_id=1719587064]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0" unique_id=2016036242]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0036621, 0)
+shape = SubResource("CapsuleShape3D_cjx8b")

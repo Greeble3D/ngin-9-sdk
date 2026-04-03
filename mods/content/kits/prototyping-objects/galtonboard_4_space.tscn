@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cyf5xqgq2by1a"]
+
+[ext_resource type="PackedScene" uid="uid://dpil4o1gted7o" path="res://mods/content/kits/prototyping-objects/sources-gltf/galtonboard-4-space.gltf" id="1_xny07"]
+[ext_resource type="Material" uid="uid://drug21gp8mjuc" path="res://mods/content/kits/prototyping-objects/materials/prototype-grid-material.tres" id="2_350vh"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6s7kv"]
+height = 4.0
+radius = 0.25
+
+[node name="galtonboard-4-space" unique_id=1913018442 instance=ExtResource("1_xny07")]
+
+[node name="GaltonBoard-4-Space" parent="." index="0" unique_id=803729610]
+surface_material_override/0 = ExtResource("2_350vh")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." index="1" unique_id=1035622287]
+
+[node name="CollisionShape3D-1" type="CollisionShape3D" parent="RigidBody3D" index="0" unique_id=147826190]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 6, 2)
+shape = SubResource("CylinderShape3D_6s7kv")
+
+[node name="CollisionShape3D-2" type="CollisionShape3D" parent="RigidBody3D" index="1" unique_id=795522193]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4, 6, 2)
+shape = SubResource("CylinderShape3D_6s7kv")
+
+[node name="CollisionShape3D-3" type="CollisionShape3D" parent="RigidBody3D" index="2" unique_id=1013241758]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2, 4, 2)
+shape = SubResource("CylinderShape3D_6s7kv")
+
+[node name="CollisionShape3D-4" type="CollisionShape3D" parent="RigidBody3D" index="3" unique_id=2072278026]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -2, 4, 2)
+shape = SubResource("CylinderShape3D_6s7kv")
+
+[node name="CollisionShape3D-5" type="CollisionShape3D" parent="RigidBody3D" index="4" unique_id=109489498]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 2, 2)
+shape = SubResource("CylinderShape3D_6s7kv")
+
+[node name="CollisionShape3D-6" type="CollisionShape3D" parent="RigidBody3D" index="5" unique_id=508139962]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -4, 2, 2)
+shape = SubResource("CylinderShape3D_6s7kv")
