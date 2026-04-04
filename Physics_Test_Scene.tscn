@@ -12,7 +12,6 @@
 [ext_resource type="PackedScene" uid="uid://ban7bppid6qk4" path="res://mods/content/kits/prototyping-objects/galtonboard_back_8.tscn" id="10_iiafx"]
 [ext_resource type="PackedScene" uid="uid://cr1ys0qd8ibpo" path="res://mods/content/kits/prototyping-objects/galtonboard_1_space.tscn" id="12_t5h1i"]
 [ext_resource type="PackedScene" uid="uid://dtg06g4anjera" path="res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/hopper.tscn" id="13_3h6no"]
-[ext_resource type="Script" uid="uid://cnanpobou3mjk" path="res://activate_hopper.gd" id="14_2jpcw"]
 [ext_resource type="PackedScene" uid="uid://dumtfiqba8h3f" path="res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/hopper_stand.tscn" id="15_j178n"]
 [ext_resource type="PackedScene" uid="uid://bh7lk0ai8obqg" path="res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/hopper_support.tscn" id="16_swskj"]
 [ext_resource type="PackedScene" uid="uid://lnucmk81rt6i" path="res://mods/content/kits/testing-objects-contraptions/contraptions/bop_bumper.tscn" id="17_ucwvk"]
@@ -1128,7 +1127,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34387207, -0.32681274, -0.
 
 [node name="hopper" parent="." unique_id=1712322518 instance=ExtResource("13_3h6no")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0871582, 9.75354, 1.1340787)
-script = ExtResource("14_2jpcw")
 
 [node name="hopper_stand" parent="hopper" unique_id=2123342424 instance=ExtResource("15_j178n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.36395264, 1.1271, -2.8313453)
