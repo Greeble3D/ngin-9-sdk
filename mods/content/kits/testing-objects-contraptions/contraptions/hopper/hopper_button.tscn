@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ds13w0fx3vkdq"]
+
+[ext_resource type="PackedScene" uid="uid://k0jn84mwo3n7" path="res://mods/content/kits/testing-objects-contraptions/contraptions/button/button_.tscn" id="1_y8r8a"]
+[ext_resource type="Texture2D" uid="uid://c1w0sjd2qv6ut" path="res://mods/content/kits/testing-objects-contraptions/contraptions/textures/target.png" id="2_chcp7"]
+[ext_resource type="Texture2D" uid="uid://dw2veeg28l4wl" path="res://mods/content/kits/testing-objects-contraptions/contraptions/textures/target-emmission.png" id="3_qxyw4"]
+
+[node name="button_" unique_id=1889706277 instance=ExtResource("1_y8r8a")]
+
+[node name="Decal" type="Decal" parent="." index="4" unique_id=1375086086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0003100112, 0)
+size = Vector3(0.75, 0.17308712, 0.75)
+texture_albedo = ExtResource("2_chcp7")
+texture_emission = ExtResource("3_qxyw4")
+emission_energy = 0.3
+modulate = Color(1, 0.68333334, 0, 1)

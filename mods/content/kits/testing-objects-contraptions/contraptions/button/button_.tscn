@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://k0jn84mwo3n7"]
+
+[ext_resource type="PackedScene" uid="uid://c42lb3qjct46r" path="res://mods/content/kits/testing-objects-contraptions/contraptions/button/source/button_.blend" id="1_17uce"]
+[ext_resource type="Material" uid="uid://5m33y0e8u1pd" path="res://mods/content/kits/testing-objects-contraptions/contraptions/button/material/button_basic_material.tres" id="2_f5wac"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_17uce"]
+albedo_color = Color(0.03999996, 0.48, 0, 1)
+roughness = 0.2
+emission_enabled = true
+emission = Color(0.11999998, 0.4, 0, 1)
+emission_energy_multiplier = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f5wac"]
+albedo_color = Color(0.083333254, 1, 0, 1)
+roughness = 0.2
+emission_enabled = true
+emission = Color(0, 0.81, 0.013499987, 1)
+emission_energy_multiplier = 2.0
+
+[node name="button_" unique_id=1889706277 instance=ExtResource("1_17uce")]
+
+[node name="ButtonLight" type="OmniLight3D" parent="." index="0" unique_id=731012782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3956543, 0)
+visible = false
+light_color = Color(0.14799994, 0.74, 0, 1)
+light_energy = 0.1
+omni_range = 0.8888066
+
+[node name="ButtonOff" parent="." index="1" unique_id=1344031138]
+surface_material_override/0 = SubResource("StandardMaterial3D_17uce")
+
+[node name="ButtonBase" parent="." index="2" unique_id=1921649323]
+surface_material_override/0 = ExtResource("2_f5wac")
+
+[node name="ButtonOn" parent="." index="3" unique_id=1805249158]
+visible = false
+surface_material_override/0 = SubResource("StandardMaterial3D_f5wac")

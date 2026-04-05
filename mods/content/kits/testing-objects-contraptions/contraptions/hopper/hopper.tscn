@@ -4,6 +4,7 @@
 [ext_resource type="Material" uid="uid://bu4bly8kq6s6l" path="res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/material/release_hopper.tres" id="2_rvhds"]
 [ext_resource type="PackedScene" uid="uid://b6jtkvpvpcb6t" path="res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/hopper_lid_left.tscn" id="3_e16m6"]
 [ext_resource type="PackedScene" uid="uid://c500oet8qeudy" path="res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/hopper_lid_right.tscn" id="4_gq1ni"]
+[ext_resource type="PackedScene" uid="uid://ds13w0fx3vkdq" path="res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/hopper_button.tscn" id="5_6qr1e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ofmk5"]
 size = Vector3(0.25735474, 1.9973755, 5.01001)
@@ -21,7 +22,7 @@ size = Vector3(0.27942657, 0.6188755, 0.96191406)
 size = Vector3(2.421997, 0.2, 5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_msroq"]
-size = Vector3(0.13903046, 1.8436279, 3.9541016)
+size = Vector3(0.13903046, 0.83496094, 0.85839844)
 
 [node name="hopper" unique_id=1712322518 instance=ExtResource("1_ofmk5")]
 
@@ -75,20 +76,12 @@ shape = SubResource("BoxShape3D_e16m6")
 collision_layer = 4
 collision_mask = 7
 
-[node name="CollisionShape3D-1" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=732083295]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6847878, 0.92230225, 0)
+[node name="CollisionShape3D-1" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=5945860]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.5115462, -2.6354825)
 shape = SubResource("BoxShape3D_msroq")
 
-[node name="CollisionShape3D-2" type="CollisionShape3D" parent="Activate_1" index="1" unique_id=380595571]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.635, 0.922, 0)
-shape = SubResource("BoxShape3D_msroq")
-
-[node name="CollisionShape3D-3" type="CollisionShape3D" parent="Activate_1" index="2" unique_id=5945860]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.922, -2.6354825)
-shape = SubResource("BoxShape3D_msroq")
-
-[node name="CollisionShape3D-4" type="CollisionShape3D" parent="Activate_1" index="3" unique_id=1938558373]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.922, 2.635)
+[node name="CollisionShape3D-2" type="CollisionShape3D" parent="Activate_1" index="1" unique_id=1938558373]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.52088004, 2.635)
 shape = SubResource("BoxShape3D_msroq")
 
 [node name="HingeJointLeft" type="HingeJoint3D" parent="." index="5" unique_id=1576952013]
@@ -106,3 +99,11 @@ node_b = NodePath("../HopperLid_2")
 exclude_nodes_from_collision = false
 angular_limit/enable = true
 angular_limit/lower = -2.443461
+
+[node name="Button_A" parent="." index="7" unique_id=1889706277 instance=ExtResource("5_6qr1e")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.49886927, -2.4956944)
+metadata/activate = 1
+
+[node name="Button_B" parent="." index="8" unique_id=1920787589 instance=ExtResource("5_6qr1e")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.499, 2.48715)
+metadata/activate = 1
