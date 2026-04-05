@@ -18,11 +18,21 @@ normal_texture = ExtResource("4_0q03u")
 radius = 0.07763672
 height = 0.23083115
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kx30f"]
+radius = 0.12109375
+height = 0.2788086
+
 [node name="grenade" unique_id=1114846529 instance=ExtResource("1_yhh75")]
 
-[node name="safety_low_08 - Default_0" parent="." index="0" unique_id=373232471]
+[node name="safety_low_08 - Default_0" parent="." index="0" unique_id=676940626]
 surface_material_override/0 = SubResource("StandardMaterial3D_cvuhq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1373445366]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010925293, 0.099206924, 0.0012817383)
 shape = SubResource("CapsuleShape3D_yhh75")
+
+[node name="Activate_1" type="Area3D" parent="." index="2" unique_id=505366113]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=442142965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013654053, 0.083042145, 0)
+shape = SubResource("CapsuleShape3D_kx30f")

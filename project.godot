@@ -21,6 +21,8 @@ folder_colors={
 "res://mods/": "green",
 "res://mods/content/kits/testing-objects-contraptions/contraptions/": "yellow",
 "res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/": "orange",
+"res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/": "gray",
+"res://mods/content/kits/testing-objects-contraptions/contraptions/textures/": "gray",
 "res://mods/content/kits/testing-objects-spawns/spawns/": "red",
 "res://packs/": "orange"
 }

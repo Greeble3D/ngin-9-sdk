@@ -31,8 +31,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_iufk8")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05032921, 0)
 shape = SubResource("CylinderShape3D_dbwer")
 
-[node name="Sensor_1" type="Area3D" parent="." index="2" unique_id=1208943197]
+[node name="Activate_1" type="Area3D" parent="." index="2" unique_id=1208943197]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Sensor_1" index="0" unique_id=1056834289]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=1056834289]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09136963, 0)
 shape = SubResource("CylinderShape3D_h1xgl")
