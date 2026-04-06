@@ -17,8 +17,11 @@ normal_texture = ExtResource("4_uxkjf")
 [sub_resource type="BoxShape3D" id="BoxShape3D_jjln4"]
 size = Vector3(0.5917969, 0.59659195, 4.0004883)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_tiqav"]
+size = Vector3(1.2060547, 0.48817444, 4.036133)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_2jdpw"]
-size = Vector3(1.1988525, 0.48817444, 3.9980469)
+size = Vector3(1.7724609, 0.48817444, 4.036133)
 
 [node name="bop_bumper" unique_id=1061942676 instance=ExtResource("1_d852y")]
 
@@ -32,8 +35,13 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rekey")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11212158, 0.7880459, 0.24682617)
 shape = SubResource("BoxShape3D_jjln4")
 
-[node name="Bop_Bumper_1" type="StaticBody3D" parent="." index="2" unique_id=444663449]
+[node name="CollisionShape3D-1" type="CollisionShape3D" parent="StaticBody3D" index="1" unique_id=861661871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11212158, 0.24564362, 0.24560547)
+shape = SubResource("BoxShape3D_tiqav")
 
-[node name="CollisionShape3D-1" type="CollisionShape3D" parent="Bop_Bumper_1" index="0" unique_id=861661871]
+[node name="Activate_1" type="Area3D" parent="." index="2" unique_id=857001023]
+collision_layer = 0
+
+[node name="CollisionShape3D-2" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=741674746]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11212158, 0.24564362, 0.24560547)
 shape = SubResource("BoxShape3D_2jdpw")

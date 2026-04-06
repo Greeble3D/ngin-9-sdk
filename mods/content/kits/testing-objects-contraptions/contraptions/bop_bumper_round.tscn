@@ -18,23 +18,31 @@ normal_texture = ExtResource("4_rfagk")
 height = 0.59000397
 radius = 0.7470703
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_r231t"]
+height = 0.50128174
+radius = 0.98046875
+
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_vnbn2"]
 height = 0.50128174
-radius = 1.003418
+radius = 1.3447266
 
 [node name="bop_bumper_round" unique_id=1625094939 instance=ExtResource("1_prf1k")]
 
 [node name="BopperBumperRound" parent="." index="0" unique_id=1710474667]
 surface_material_override/0 = SubResource("StandardMaterial3D_f6ltf")
 
-[node name="RigidBody3D" type="RigidBody3D" parent="." index="1" unique_id=2124729847]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=489066584]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" index="0" unique_id=1661004621]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1661004621]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0014352798, 0.800857, 0)
 shape = SubResource("CylinderShape3D_8dlhp")
 
-[node name="Bop_Bumper_1" type="StaticBody3D" parent="." index="2" unique_id=233034143]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1" unique_id=145279333]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0014352798, 0.252109, 0)
+shape = SubResource("CylinderShape3D_r231t")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Bop_Bumper_1" index="0" unique_id=145279333]
+[node name="Activate_1" type="Area3D" parent="." index="2" unique_id=1128127463]
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=1988010614]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0014352798, 0.252109, 0)
 shape = SubResource("CylinderShape3D_vnbn2")
