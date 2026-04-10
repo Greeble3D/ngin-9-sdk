@@ -19,11 +19,20 @@ config/icon="res://icon.svg"
 
 folder_colors={
 "res://mods/": "green",
+"res://mods/content/kits/": "yellow",
+"res://mods/content/kits/decals/": "red",
+"res://mods/content/kits/prototyping-objects/": "orange",
+"res://mods/content/kits/testing-misc-objects/": "yellow",
+"res://mods/content/kits/testing-objects-contraptions/": "teal",
 "res://mods/content/kits/testing-objects-contraptions/contraptions/": "yellow",
 "res://mods/content/kits/testing-objects-contraptions/contraptions/hopper/": "orange",
 "res://mods/content/kits/testing-objects-contraptions/contraptions/release_hopper/": "gray",
 "res://mods/content/kits/testing-objects-contraptions/contraptions/textures/": "gray",
-"res://mods/content/kits/testing-objects-spawns/spawns/": "red",
+"res://mods/content/kits/testing-objects-doors_windows/": "blue",
+"res://mods/content/kits/testing-objects-spawns/": "purple",
+"res://mods/content/kits/testing-objects-spawns/spawns/": "purple",
+"res://mods/content/kits/testing-objects/": "green",
+"res://mods/content/models/": "blue",
 "res://packs/": "orange"
 }
 
