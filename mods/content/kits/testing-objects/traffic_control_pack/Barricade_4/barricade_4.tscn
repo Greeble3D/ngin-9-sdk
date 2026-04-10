@@ -6,6 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://eqjcevr3r6kw" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_4/textures/Barricade_4_barrier_Normal.png" id="4_7io8x"]
 [ext_resource type="Texture2D" uid="uid://ccdrkexkxrbil" path="res://mods/content/kits/testing-objects/traffic_control_pack/Barricade_4/textures/Barricade_4_barrier_Roughness.png" id="5_f18jw"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_lj4ep"]
+size = Vector3(1.7614746, 0.18395996, 0.4765625)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ngamd"]
+size = Vector3(1.7614746, 0.690506, 0.2626953)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_weid5"]
 albedo_texture = ExtResource("2_j05x1")
 metallic = 1.0
@@ -17,5 +23,13 @@ normal_texture = ExtResource("4_7io8x")
 
 [node name="Barricade_4" unique_id=747177235 instance=ExtResource("1_q0hju")]
 
-[node name="Barricade_4" parent="." index="0" unique_id=1511706322]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="0" unique_id=184151920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08294678, 0)
+shape = SubResource("BoxShape3D_lj4ep")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="1" unique_id=546225390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.52484894, 0)
+shape = SubResource("BoxShape3D_ngamd")
+
+[node name="Barricade_4" parent="." index="2" unique_id=2000939295]
 surface_material_override/0 = SubResource("StandardMaterial3D_weid5")

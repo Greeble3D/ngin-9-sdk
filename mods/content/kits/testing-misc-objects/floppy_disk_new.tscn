@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://xjqa4oqpfm3a"]
+
+[ext_resource type="PackedScene" uid="uid://y7shofh5j0oe" path="res://mods/content/kits/testing-misc-objects/floppy-disk/floppy-disk.blend" id="1_vnhem"]
+[ext_resource type="Material" uid="uid://de8rpenii8xgt" path="res://mods/content/kits/testing-misc-objects/floppy-disk/materials/floppy_new.tres" id="2_362hx"]
+
+[node name="FloppyDiskNew" unique_id=1373657648 instance=ExtResource("1_vnhem")]
+
+[node name="FloppyDisk" parent="." index="0" unique_id=104349332]
+surface_material_override/0 = ExtResource("2_362hx")

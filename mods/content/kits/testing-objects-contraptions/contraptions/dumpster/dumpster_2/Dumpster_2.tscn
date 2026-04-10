@@ -27,13 +27,16 @@ size = Vector3(0.08239746, 0.37780762, 0.86816406)
 [sub_resource type="BoxShape3D" id="BoxShape3D_wd3f8"]
 size = Vector3(0.73046875, 0.08446503, 0.92549133)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ixtss"]
+size = Vector3(0.7373047, 0.16430664, 0.045898438)
+
 [node name="Dumpster_2" type="Node3D" unique_id=469103046]
 
 [node name="Dumpster" parent="." unique_id=2117426439 instance=ExtResource("1_v2rro")]
 freeze = true
 metadata/selectable = true
 
-[node name="Dumpster_2" parent="Dumpster" index="0" unique_id=907011181]
+[node name="Dumpster_2" parent="Dumpster" index="0" unique_id=679608047]
 surface_material_override/0 = ExtResource("2_m46xc")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Dumpster" unique_id=1587517428]
@@ -80,44 +83,56 @@ shape = SubResource("BoxShape3D_vlhqd")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.77, 0.74, 0.001)
 shape = SubResource("BoxShape3D_vlhqd")
 
-[node name="Dumpster_Lid_Left" parent="." unique_id=1207724995 instance=ExtResource("2_wd3f8")]
+[node name="DumpsterLid_1" parent="." unique_id=1207724995 instance=ExtResource("2_wd3f8")]
 metadata/selectable = true
 
-[node name="Dumpster_2_Lid_Left" parent="Dumpster_Lid_Left" index="0" unique_id=2066078129]
+[node name="Dumpster_2_Lid_Left" parent="DumpsterLid_1" index="0" unique_id=967973463]
 surface_material_override/0 = ExtResource("2_m46xc")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Dumpster_Lid_Left" unique_id=1164645845]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DumpsterLid_1" unique_id=1164645845]
 transform = Transform3D(1, 0, 0, 0, 0.98389125, -0.17876786, 0, 0.17876786, 0.98389125, -0.37014568, 1.1001897, 1.1920929e-05)
 shape = SubResource("BoxShape3D_wd3f8")
 
-[node name="Dumpster_Lid_Right" parent="." unique_id=58400084 instance=ExtResource("3_m46xc")]
+[node name="DumpsterLid_2" parent="." unique_id=58400084 instance=ExtResource("3_m46xc")]
 metadata/selectable = false
 
-[node name="Dumpster_2_Lid_Right" parent="Dumpster_Lid_Right" index="0" unique_id=1953190258]
+[node name="Dumpster_2_Lid_Right" parent="DumpsterLid_2" index="0" unique_id=1277992104]
 surface_material_override/0 = ExtResource("2_m46xc")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Dumpster_Lid_Right" unique_id=1579656568]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DumpsterLid_2" unique_id=1579656568]
 transform = Transform3D(1, 0, 0, 0, 0.98389125, -0.17876786, 0, 0.17876786, 0.98389125, 0.37202793, 1.100106, 0.00016573071)
 shape = SubResource("BoxShape3D_wd3f8")
 
-[node name="HingeJoint3DLeft" type="HingeJoint3D" parent="." unique_id=1102230042]
+[node name="Hinge_1" type="HingeJoint3D" parent="." unique_id=1102230042]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.37014568, 1.1551558, -0.45881727)
 node_a = NodePath("../Dumpster")
-node_b = NodePath("../Dumpster_Lid_Left")
+node_b = NodePath("../DumpsterLid_1")
 exclude_nodes_from_collision = false
 angular_limit/enable = true
 angular_limit/lower = 0.0
 motor/target_velocity = 3.4906585
 
-[node name="HingeJoint3DRight" type="HingeJoint3D" parent="." unique_id=1313718159]
+[node name="Hinge_2" type="HingeJoint3D" parent="." unique_id=1313718159]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.37008047, 1.155106, -0.45883426)
 node_a = NodePath("../Dumpster")
-node_b = NodePath("../Dumpster_Lid_Right")
+node_b = NodePath("../DumpsterLid_2")
 exclude_nodes_from_collision = false
 angular_limit/enable = true
 angular_limit/lower = 0.0
 motor/target_velocity = 3.4906585
 
+[node name="Activator_1" type="Area3D" parent="." unique_id=1381342934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.372315, 0.97665, 0.46767598)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Activator_1" unique_id=768260152]
+shape = SubResource("BoxShape3D_ixtss")
+
+[node name="Activator_2" type="Area3D" parent="." unique_id=332228746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.372, 0.977, 0.468)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Activator_2" unique_id=1832021954]
+shape = SubResource("BoxShape3D_ixtss")
+
 [editable path="Dumpster"]
-[editable path="Dumpster_Lid_Left"]
-[editable path="Dumpster_Lid_Right"]
+[editable path="DumpsterLid_1"]
+[editable path="DumpsterLid_2"]

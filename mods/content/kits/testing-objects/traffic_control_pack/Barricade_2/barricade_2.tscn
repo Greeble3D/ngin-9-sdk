@@ -19,7 +19,7 @@ size = Vector3(2.6289063, 0.62475586, 0.44140625)
 
 [node name="Barricade_2" unique_id=961003212 instance=ExtResource("1_hmhxw")]
 
-[node name="Barricade_2" parent="." index="0" unique_id=1649461793]
+[node name="Barricade_2" parent="." index="0" unique_id=573163869]
 surface_material_override/0 = SubResource("StandardMaterial3D_tlbcm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=2082628679]

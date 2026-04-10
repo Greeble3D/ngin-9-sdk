@@ -40,7 +40,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11212158, 0.24564362, 0.245
 shape = SubResource("BoxShape3D_tiqav")
 
 [node name="Activate_1" type="Area3D" parent="." index="2" unique_id=857001023]
-collision_layer = 0
 
 [node name="CollisionShape3D-2" type="CollisionShape3D" parent="Activate_1" index="0" unique_id=741674746]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11212158, 0.24564362, 0.24560547)

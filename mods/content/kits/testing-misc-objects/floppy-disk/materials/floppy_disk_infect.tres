@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://2bbakvk3uki4"]
+
+[ext_resource type="Texture2D" uid="uid://c1tt3xrpjujl8" path="res://mods/content/kits/testing-misc-objects/floppy-disk/textures/infect/floppy-disk_DefaultMaterial_BaseColor.png" id="1_0tpqy"]
+[ext_resource type="Texture2D" uid="uid://h8844voi0bcf" path="res://mods/content/kits/testing-misc-objects/floppy-disk/textures/infect/floppy-disk_DefaultMaterial_Metallic.png" id="2_k732n"]
+[ext_resource type="Texture2D" uid="uid://cmouil750ajhw" path="res://mods/content/kits/testing-misc-objects/floppy-disk/textures/infect/floppy-disk_DefaultMaterial_Normal.png" id="3_uknpp"]
+[ext_resource type="Texture2D" uid="uid://c507i5e4vlklf" path="res://mods/content/kits/testing-misc-objects/floppy-disk/textures/infect/floppy-disk_DefaultMaterial_Roughness.png" id="4_233am"]
+
+[resource]
+albedo_texture = ExtResource("1_0tpqy")
+metallic = 1.0
+metallic_texture = ExtResource("2_k732n")
+roughness_texture = ExtResource("4_233am")
+normal_enabled = true
+normal_texture = ExtResource("3_uknpp")

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bk2ot5cu3qec2"]
+
+[ext_resource type="PackedScene" uid="uid://y7shofh5j0oe" path="res://mods/content/kits/testing-misc-objects/floppy-disk/floppy-disk.blend" id="1_qufwh"]
+[ext_resource type="Texture2D" uid="uid://wxaxtdts8x2t" path="res://mods/content/kits/testing-misc-objects/floppy-disk/textures/01101/floppy-disk_DefaultMaterial_BaseColor.png" id="2_enrw0"]
+[ext_resource type="Texture2D" uid="uid://b1ckqmfvmt3ch" path="res://mods/content/kits/testing-misc-objects/floppy-disk/textures/01101/floppy-disk_DefaultMaterial_Metallic.png" id="3_jckca"]
+[ext_resource type="Texture2D" uid="uid://dc36dkfmas3v5" path="res://mods/content/kits/testing-misc-objects/floppy-disk/textures/01101/floppy-disk_DefaultMaterial_Normal.png" id="4_lissq"]
+[ext_resource type="Texture2D" uid="uid://toaug3kml6np" path="res://mods/content/kits/testing-misc-objects/floppy-disk/textures/01101/floppy-disk_DefaultMaterial_Roughness.png" id="5_otper"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_17v80"]
+albedo_texture = ExtResource("2_enrw0")
+metallic = 1.0
+metallic_texture = ExtResource("3_jckca")
+roughness_texture = ExtResource("5_otper")
+normal_enabled = true
+normal_texture = ExtResource("4_lissq")
+
+[node name="FloppyDisk01101" unique_id=1373657648 instance=ExtResource("1_qufwh")]
+
+[node name="FloppyDisk" parent="." index="0" unique_id=104349332]
+surface_material_override/0 = SubResource("StandardMaterial3D_17v80")
