@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cca1igh6iegke"
-path="res://.godot/imported/Perfect DOS VGA 437 Win.ttf-7268c4643f3da693774fc83a22e45238.fontdata"
+uid="uid://cid0vckxdtqrq"
+path="res://.godot/imported/Altinn-DINExp.otf-b9f2a2b31c100e600d009e78e2762cef.fontdata"
 
 [deps]
 
-source_file="res://fonts/Perfect DOS VGA 437 Win.ttf"
-dest_files=["res://.godot/imported/Perfect DOS VGA 437 Win.ttf-7268c4643f3da693774fc83a22e45238.fontdata"]
+source_file="res://brand/fonts/altinn/Altinn-DINExp.otf"
+dest_files=["res://.godot/imported/Altinn-DINExp.otf-b9f2a2b31c100e600d009e78e2762cef.fontdata"]
 
 [params]
 

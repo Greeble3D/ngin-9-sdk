@@ -1,0 +1,155 @@
+NGIN#9 — LOGO SPEC (CONDENSED)
+
+1. STRUCTURE
+- Layout: Horizontal, centered block
+- Format:
+  NGIN#9
+  ENGINE NUMBER NINE ———
+- Aspect: 3:1 to 5:1
+
+---
+
+2. PRIMARY MARK (NGIN#9)
+Font:
+- Saira Stencil One (modified)
+
+Style:
+- Heavy stencil
+- Hard edges (no rounding)
+
+Treatment:
+- Subtle distress (edge breakup, wear)
+- Non-uniform fill (±5–10%)
+
+Color:
+- Base: #E6E1D8
+- Range: #D8D2C8 → #F0ECE4
+
+Rules:
+- NO glow
+- NO gradients
+- NO shadows
+- Texture must be baked
+
+---
+
+3. SUBTITLE (ENGINE NUMBER NINE)
+Font:
+- Altinn DIN (https://github.com/Altinn/altinn-din)
+- Style: DIN-based geometric sans
+- Monoline, mechanical
+
+Weight:
+- Regular (never bold)
+
+Specs:
+- Tracking: +150 to +250 (very wide)
+- Size: ~15% of main text height
+- All caps
+
+Color:
+- Core: #E3A72F
+- Inner: #FFB84A
+- Outer: #FF8C1A (low opacity)
+
+---
+
+4. GLOW (SUBTITLE ONLY)
+- Inner radius: 2–4 px
+- Outer radius: 6–12 px max
+- Subtle, internal (embedded) feel
+
+Rules:
+- Slight uneven intensity allowed
+- NEVER overpower main text
+
+---
+
+5. HORIZONTAL LINE
+- Aligned to subtitle baseline
+- Starts after text
+
+Specs:
+- Length: 1.5×–3× subtitle width
+- Thickness: 1–3 px
+- Same color + glow as subtitle
+
+Imperfections:
+- Minor breaks
+- Slight taper
+- 1–2 px misalignment allowed
+
+---
+
+6. SPACING
+- Vertical gap: ~0.25× main text height
+- Subtitle: LEFT-aligned to NGIN#9
+
+---
+
+7. DISTRESS (CRITICAL)
+Type:
+- Physical wear simulation (not overlay noise)
+
+Include:
+- Paint inconsistency
+- Micro chipping
+- Dirt/grime
+- Vertical streaking
+
+Rules:
+- Directional (gravity-based)
+- Non-repeating
+- Subtle
+
+---
+
+8. COLOR ROLES
+- NGIN#9: Physical marking (white)
+- Subtitle: Active system (yellow)
+- Line: Signal extension
+
+---
+
+9. RULES
+DO:
+- Maintain hierarchy (white dominates)
+- Preserve wide tracking
+- Keep distress subtle
+
+DO NOT:
+- Add symbols/icons
+- Center subtitle independently
+- Use modern effects (blur, gradients, gloss)
+- Clean stencil edges
+- Overuse glow
+
+---
+
+10. EXPORTS
+1. Vector:
+   - Black/white only
+   - No texture, no glow
+
+2. Print:
+   - Texture baked
+   - No glow
+
+3. Screen:
+   - Glow enabled
+   - Texture included
+
+4. Decal:
+   - High distress
+   - Alpha-ready
+
+---
+
+11. INTENT
+Machine designation marking (not a brand logo)
+
+Tone:
+- Industrial
+- Functional
+- Controlled
+- Non-decorative

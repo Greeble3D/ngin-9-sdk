@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [file_customization]
 
 folder_colors={
+"res://brand/fonts/": "yellow",
+"res://brand/logo/": "orange",
 "res://mods/": "green",
 "res://mods/content/kits/": "yellow",
 "res://mods/content/kits/decals/": "red",

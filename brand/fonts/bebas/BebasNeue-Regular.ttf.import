@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://30ptm6claymu"
-path="res://.godot/imported/Perfect DOS VGA 437.ttf-267260a59f9c82d60761dc0cc8cbb5e4.fontdata"
+uid="uid://cr7gao26ba1n"
+path="res://.godot/imported/BebasNeue-Regular.ttf-e63f02d3b8b481faaef0fb1e5c080b49.fontdata"
 
 [deps]
 
-source_file="res://fonts/Perfect DOS VGA 437.ttf"
-dest_files=["res://.godot/imported/Perfect DOS VGA 437.ttf-267260a59f9c82d60761dc0cc8cbb5e4.fontdata"]
+source_file="res://brand/fonts/bebas/BebasNeue-Regular.ttf"
+dest_files=["res://.godot/imported/BebasNeue-Regular.ttf-e63f02d3b8b481faaef0fb1e5c080b49.fontdata"]
 
 [params]
 

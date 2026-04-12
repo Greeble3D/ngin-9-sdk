@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dmh3vjjkrd5xk"
-path="res://.godot/imported/SairaStencilOne-Regular.ttf-de77ad234489086949d2702d34ce9d07.fontdata"
+uid="uid://roppfmugd4qk"
+path="res://.godot/imported/Altinn-DINCondensed.otf-5b813f39ce72444fccc6d1a3697f3bed.fontdata"
 
 [deps]
 
-source_file="res://fonts/SairaStencilOne-Regular.ttf"
-dest_files=["res://.godot/imported/SairaStencilOne-Regular.ttf-de77ad234489086949d2702d34ce9d07.fontdata"]
+source_file="res://brand/fonts/altinn/Altinn-DINCondensed.otf"
+dest_files=["res://.godot/imported/Altinn-DINCondensed.otf-5b813f39ce72444fccc6d1a3697f3bed.fontdata"]
 
 [params]
 
