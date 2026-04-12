@@ -5,5 +5,5 @@
 
 [node name="STRUCTURE_Pillar_1x1x3" unique_id=703140254 instance=ExtResource("1_pm1e5")]
 
-[node name="STRUCTURE_Pillar_1x1x3" parent="." index="0" unique_id=15203681]
+[node name="STRUCTURE_Pillar_1x1x3" parent="." index="0" unique_id=731499009]
 surface_material_override/0 = ExtResource("2_5uond")
