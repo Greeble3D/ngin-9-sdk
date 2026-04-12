@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://m4bpkev17oe5"
-path="res://.godot/imported/window-4-col.blend-d04f45457ae5c134371fc922b24e4970.scn"
+path="res://.godot/imported/window-4-col.blend-e637f0d575b772bac02b1041d225bc72.scn"
 
 [deps]
 
-source_file="res://mods/content/kits/testing-objects-doors_windows/window-4-col.blend"
-dest_files=["res://.godot/imported/window-4-col.blend-d04f45457ae5c134371fc922b24e4970.scn"]
+source_file="res://mods/content/kits/testing-objects-doors_windows/sources/window-4-col.blend"
+dest_files=["res://.godot/imported/window-4-col.blend-e637f0d575b772bac02b1041d225bc72.scn"]
 
 [params]
 

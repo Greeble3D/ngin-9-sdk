@@ -1,38 +1,17 @@
 [gd_scene format=3 uid="uid://d0hifekgstvu7"]
 
 [ext_resource type="PackedScene" uid="uid://5mfx3sfa083s" path="res://mods/content/kits/prototyping-objects/block_plate_16x16.tscn" id="1_tjxo2"]
-[ext_resource type="Texture2D" uid="uid://c1ennjvoga0p0" path="res://mods/content/kits/decals/images/0904-vector-wikianswers-orange-avatar-swimsuit-addition-01.png" id="2_qk16d"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
-size = Vector3(2, 0.5, 2)
+[ext_resource type="PackedScene" uid="uid://bctj8hr2ecba5" path="res://mods/content/kits/testing-objects-doors_windows/door_standard.tscn" id="2_qk16d"]
 
 [node name="Node3D" type="Node3D" unique_id=621170799]
 
 [node name="BLOCK_Plate_16x16x1" parent="." unique_id=1405619511 instance=ExtResource("1_tjxo2")]
 
-[node name="DecalBeachGoer" type="Decal" parent="." unique_id=444363831]
-size = Vector3(2, 0.5, 2)
-texture_albedo = ExtResource("2_qk16d")
+[node name="DoorStandard" parent="." unique_id=2063649930 instance=ExtResource("2_qk16d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.86225355, 0, 0.22493863)
 
-[node name="Area3D" type="Area3D" parent="DecalBeachGoer" unique_id=1227964739]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1880109611]
+transform = Transform3D(0.95754117, -0.115253225, 0.26425666, 0, 0.9166141, 0.3997732, -0.28829652, -0.3827993, 0.87769574, 0, 2.56538, 2.3574288)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DecalBeachGoer/Area3D" unique_id=64261463]
-visible = false
-shape = SubResource("BoxShape3D_m3p2h")
-
-[node name="Decal_34" type="Decal" parent="." unique_id=322943097]
-size = Vector3(2, 0.5, 2)
-
-[node name="Area3D" type="Area3D" parent="Decal_34" unique_id=1362443228]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Decal_34/Area3D" unique_id=886176383]
-shape = SubResource("BoxShape3D_m3p2h")
-
-[node name="Decal_35" type="Decal" parent="." unique_id=769688900]
-visible = false
-size = Vector3(2, 0.5, 2)
-
-[node name="Area3D" type="Area3D" parent="Decal_35" unique_id=53717590]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Decal_35/Area3D" unique_id=1395712194]
-shape = SubResource("BoxShape3D_m3p2h")
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1405914437]
+transform = Transform3D(0.25881907, 0, 0.9659258, -0.25, 0.9659258, 0.066987306, -0.93301266, -0.25881904, 0.25000003, 0, 0, 0)

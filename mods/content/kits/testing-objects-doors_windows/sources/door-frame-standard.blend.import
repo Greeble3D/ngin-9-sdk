@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://l2mu6shj5f7o"
-path="res://.godot/imported/door-parts.blend-5ba1786a0e120b84678248ed3147b856.scn"
+uid="uid://bbka0rcugohvi"
+path="res://.godot/imported/door-frame-standard.blend-db6637fe68bdfc38e10babcaa2bf16a0.scn"
 
 [deps]
 
-source_file="res://mods/content/kits/testing-objects-doors_windows/door-parts.blend"
-dest_files=["res://.godot/imported/door-parts.blend-5ba1786a0e120b84678248ed3147b856.scn"]
+source_file="res://mods/content/kits/testing-objects-doors_windows/sources/door-frame-standard.blend"
+dest_files=["res://.godot/imported/door-frame-standard.blend-db6637fe68bdfc38e10babcaa2bf16a0.scn"]
 
 [params]
 
