@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cjnj7i1sy31rm"]
+
+[ext_resource type="Texture2D" uid="uid://dxneunnkip27" path="res://mods/content/kits/decals/images/peach-droid-with-dome-head-and-round-mouth-and-plus-sign-eyes-and-three-dark-spikes.png" id="1_5uvjy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalPeachDroidWithDomeHead" type="Decal" unique_id=1881102552]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_5uvjy")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=353580345]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=910775206]
+shape = SubResource("BoxShape3D_m3p2h")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bkopwbkmag5po"]
+
+[ext_resource type="Texture2D" uid="uid://doqmaa4yk35h0" path="res://mods/content/kits/decals/images/0897-vector-wikianswers-orange-avatar-lady-waving-01.png" id="1_myhd2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalWomanCommunicates" type="Decal" unique_id=343564489]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_myhd2")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=218041042]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1148777505]
+shape = SubResource("BoxShape3D_m3p2h")

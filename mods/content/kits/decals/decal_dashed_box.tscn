@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://boq4xvo2lof0f"]
+
+[ext_resource type="Texture2D" uid="uid://bithtt35u5ibs" path="res://mods/content/kits/decals/images/guide-dotted.png" id="1_sqch4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 1.115)
+
+[node name="DecalDashedBox" type="Decal" unique_id=1136291507]
+size = Vector3(2, 0.5, 1.115)
+texture_albedo = ExtResource("1_sqch4")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1700502633]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1290480315]
+shape = SubResource("BoxShape3D_m3p2h")

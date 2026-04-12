@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ci8unc8nf5fly"]
+
+[ext_resource type="Texture2D" uid="uid://dl76f3ikndkbc" path="res://mods/content/kits/decals/images/0896-vector-wikianswers-orange-avatar-lady-surprised-01.png" id="1_0j8b4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalSurprised" type="Decal" unique_id=1904263584]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_0j8b4")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=808432300]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1857001174]
+shape = SubResource("BoxShape3D_m3p2h")

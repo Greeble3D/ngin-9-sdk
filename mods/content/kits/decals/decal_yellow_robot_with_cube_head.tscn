@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b7txald4qjjlf"]
+
+[ext_resource type="Texture2D" uid="uid://cte7ekl4o62v3" path="res://mods/content/kits/decals/images/yellow-robot-with-cube-head-and-keyboard-mouth-and-black-glowing-red-eyes-and-radar-dish-hat.png" id="1_s8ill"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalYellowRobotWithCubeHead" type="Decal" unique_id=1829406677]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_s8ill")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1462844974]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=828135579]
+shape = SubResource("BoxShape3D_m3p2h")

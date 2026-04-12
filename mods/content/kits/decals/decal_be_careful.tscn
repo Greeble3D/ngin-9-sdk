@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://qigmroco2pdi"]
+
+[ext_resource type="Texture2D" uid="uid://dfxmtvy71264d" path="res://mods/content/kits/decals/images/be-careful.png" id="1_5n16a"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalBeCareful" type="Decal" unique_id=1733169386]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_5n16a")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=459578570]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=202738678]
+shape = SubResource("BoxShape3D_m3p2h")

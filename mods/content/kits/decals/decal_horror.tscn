@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://benv7vdv0d6q3"]
+
+[ext_resource type="Texture2D" uid="uid://o0o2q4x0g4gf" path="res://mods/content/kits/decals/images/disaster-girl.png" id="1_gjrn3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalHorror" type="Decal" unique_id=1803164493]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_gjrn3")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1157722661]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1427772072]
+shape = SubResource("BoxShape3D_m3p2h")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://df12wvdqfqqm6"]
+
+[ext_resource type="Texture2D" uid="uid://suj557qywy2b" path="res://mods/content/kits/decals/images/guide-circle.png" id="1_aeniu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalYellowCircle" type="Decal" unique_id=435163407]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_aeniu")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1663726143]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=168381922]
+shape = SubResource("BoxShape3D_m3p2h")

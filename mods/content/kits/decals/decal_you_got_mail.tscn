@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c55s0y25a4v7m"]
+
+[ext_resource type="Texture2D" uid="uid://di4o1aqcmtuae" path="res://mods/content/kits/decals/images/0587-vector-orange-man-mail.png" id="1_ri5i4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalYouGotMail" type="Decal" unique_id=1683818553]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_ri5i4")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1225877]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1234712353]
+shape = SubResource("BoxShape3D_m3p2h")

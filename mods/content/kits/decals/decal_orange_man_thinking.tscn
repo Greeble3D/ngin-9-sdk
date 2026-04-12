@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cvdhakk4kr737"]
+
+[ext_resource type="Texture2D" uid="uid://80j4rjo782kg" path="res://mods/content/kits/decals/images/orange-man-thinking.png" id="1_ooopm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalOrangeManThinking" type="Decal" unique_id=198138117]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_ooopm")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1208655429]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=839052686]
+shape = SubResource("BoxShape3D_m3p2h")

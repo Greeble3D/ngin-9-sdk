@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ck2jsufaps6nx"]
+
+[ext_resource type="Texture2D" uid="uid://xqxgd3em5arc" path="res://mods/content/kits/decals/images/orange-man-taped-down-orange-01.png" id="1_vg8q3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalOrangeManTapedDown" type="Decal" unique_id=1466855008]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_vg8q3")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1207720860]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1428146848]
+shape = SubResource("BoxShape3D_m3p2h")

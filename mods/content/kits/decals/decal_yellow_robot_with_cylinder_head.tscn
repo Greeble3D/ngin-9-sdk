@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://7vs015sg2koa"]
+
+[ext_resource type="Texture2D" uid="uid://dtwxcucldxrgx" path="res://mods/content/kits/decals/images/yellow-robot-with-cylinder-head-and-round-mouth-and-visor-eye-and-double-led-antenna.png" id="1_cnwna"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalYellowRobotWithCylinderHead" type="Decal" unique_id=1029995275]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_cnwna")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=545186698]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1108562477]
+shape = SubResource("BoxShape3D_m3p2h")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bwpd601mw4p1f"]
+
+[ext_resource type="Texture2D" uid="uid://c3ewnwuqlqo4d" path="res://mods/content/kits/decals/images/logo-panda-co.png" id="1_010lc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6qo6j"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalPandaCo" type="Decal" unique_id=1456159541]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_010lc")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1075176444]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=363578080]
+shape = SubResource("BoxShape3D_6qo6j")

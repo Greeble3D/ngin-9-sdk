@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://6odwhyvjohtm"]
+
+[ext_resource type="Texture2D" uid="uid://bqu5cj8nvrj78" path="res://mods/content/kits/decals/images/0899-vector-wikianswers-orange-avatar-man-on-the-town-01.png" id="1_6yw1e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalManOnTheTown" type="Decal" unique_id=1890497569]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_6yw1e")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=703375191]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2049108365]
+shape = SubResource("BoxShape3D_m3p2h")

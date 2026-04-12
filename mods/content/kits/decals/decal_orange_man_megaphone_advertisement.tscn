@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bavljiwbljjh2"]
+
+[ext_resource type="Texture2D" uid="uid://b2y8ejwrt4xoj" path="res://mods/content/kits/decals/images/orange-man-megaphone-advertising-orange-01.png" id="1_0tu6y"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalOrangeManMegaphoneAdvertisement" type="Decal" unique_id=769747982]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_0tu6y")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1716364387]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1301936874]
+shape = SubResource("BoxShape3D_m3p2h")

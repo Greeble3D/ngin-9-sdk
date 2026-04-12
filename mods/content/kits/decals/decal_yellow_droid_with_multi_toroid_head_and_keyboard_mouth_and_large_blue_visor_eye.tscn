@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ci8of42h5eh7u"]
+
+[ext_resource type="Texture2D" uid="uid://ddrpf8n2guw7d" path="res://mods/content/kits/decals/images/yellow-droid-with-multi-toroid-head-and-keyboard-mouth-and-large-blue-visor-eye.png" id="1_mmmbs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalYellowDroidWithMultiToroidHeadAndKeyboardMouthAndLargeBlueVisorEye" type="Decal" unique_id=1677445333]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_mmmbs")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=904461738]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2080807543]
+shape = SubResource("BoxShape3D_m3p2h")

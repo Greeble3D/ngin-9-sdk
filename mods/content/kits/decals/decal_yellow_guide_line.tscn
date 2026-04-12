@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://eykttscgjekl"]
+
+[ext_resource type="Texture2D" uid="uid://htmld01xgdor" path="res://mods/content/kits/decals/images/guide-line.png" id="1_kqelk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 0.093)
+
+[node name="DecalYellowGuideLine" type="Decal" unique_id=991348924]
+size = Vector3(2, 0.5, 0.093)
+texture_albedo = ExtResource("1_kqelk")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=600966490]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1360889052]
+shape = SubResource("BoxShape3D_m3p2h")

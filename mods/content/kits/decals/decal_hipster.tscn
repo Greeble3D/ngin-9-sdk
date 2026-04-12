@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bjemg4gvhneo7"]
+
+[ext_resource type="Texture2D" uid="uid://blodh8g17a1id" path="res://mods/content/kits/decals/images/0889-vector-wikianswers-orange-avatar-hippi-lady-01.png" id="1_lnuo8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalHipster" type="Decal" unique_id=13432945]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_lnuo8")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2069632711]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1314193239]
+shape = SubResource("BoxShape3D_m3p2h")

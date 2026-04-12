@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dpmueutmnokjp"]
+
+[ext_resource type="Texture2D" uid="uid://oe0r80db8jmy" path="res://mods/content/kits/decals/images/yellow-robot-with-dome-head-and-vent-mouth-and-large-blue-visor-eye-and-single-antenna.png" id="1_tqj6k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalYellowRobotWithDomeHead" type="Decal" unique_id=1971128069]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_tqj6k")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1035433544]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1526543003]
+shape = SubResource("BoxShape3D_m3p2h")

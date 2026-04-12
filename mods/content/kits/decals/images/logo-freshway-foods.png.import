@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ik52860i17e2"
-path="res://.godot/imported/freshway-foods.png-14c24b2a5fdabd01c0b84b2a69c6f191.ctex"
+path="res://.godot/imported/logo-freshway-foods.png-c7ae0b78554422b4a37c6bf9f5e41bf1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods/content/kits/decals/images/freshway-foods.png"
-dest_files=["res://.godot/imported/freshway-foods.png-14c24b2a5fdabd01c0b84b2a69c6f191.ctex"]
+source_file="res://mods/content/kits/decals/images/logo-freshway-foods.png"
+dest_files=["res://.godot/imported/logo-freshway-foods.png-c7ae0b78554422b4a37c6bf9f5e41bf1.ctex"]
 
 [params]
 

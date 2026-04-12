@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c14nevgp8nq5d"]
+
+[ext_resource type="Texture2D" uid="uid://byldc3bq4yjb8" path="res://mods/content/kits/decals/images/peach-droid-with-box-head-and-teeth-mouth-and-cyclops-eye-and-three-dark-spikes.png" id="1_y0dey"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalPeachDroidWithBoxHead" type="Decal" unique_id=1235954221]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_y0dey")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=998208664]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1408906823]
+shape = SubResource("BoxShape3D_m3p2h")

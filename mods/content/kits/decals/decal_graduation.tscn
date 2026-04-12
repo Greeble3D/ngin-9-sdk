@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dnvh53nkpbkuj"]
+
+[ext_resource type="Texture2D" uid="uid://beojr1urh2bqe" path="res://mods/content/kits/decals/images/0887-vector-wikianswers-orange-avatar-graduate-01.png" id="1_a6pn2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalGraduation" type="Decal" unique_id=929220128]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_a6pn2")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2146227621]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1701846755]
+shape = SubResource("BoxShape3D_m3p2h")

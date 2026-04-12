@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://6153qbon544f"]
+
+[ext_resource type="Texture2D" uid="uid://d0o7q3krgsatn" path="res://mods/content/kits/decals/images/0471-vector-orange-man-contractor-jackhammer.png" id="1_lepwe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalMenAtWork" type="Decal" unique_id=13360734]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_lepwe")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=778687396]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=278096980]
+shape = SubResource("BoxShape3D_m3p2h")

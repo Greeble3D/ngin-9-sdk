@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://f510rbma0fxm"]
+
+[ext_resource type="Texture2D" uid="uid://23fnewtjt38n" path="res://mods/content/kits/decals/images/yellow-robot-with-multi-toroid-head-and-black-cyclops-eye-and-double-antenna.png" id="1_a0qq7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalYellowRobotWithMultiToroidHeadAndBlackCyclopsEye" type="Decal" unique_id=1581883686]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_a0qq7")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1384167453]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=6074928]
+shape = SubResource("BoxShape3D_m3p2h")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ygdlrsrbjyf"]
+
+[ext_resource type="Texture2D" uid="uid://d4e1s5d1kmada" path="res://mods/content/kits/decals/images/0892-vector-wikianswers-orange-avatar-lady-detective-01.png" id="1_arcsi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalDetective" type="Decal" unique_id=1503196615]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_arcsi")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1979480560]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=283517294]
+shape = SubResource("BoxShape3D_m3p2h")

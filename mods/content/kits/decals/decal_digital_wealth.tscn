@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cu8f2mbgnue44"]
+
+[ext_resource type="Texture2D" uid="uid://dgeovywywbket" path="res://mods/content/kits/decals/images/0724-vector-orange-man_circuit-board.png" id="1_csmrp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalDigitalWealth" type="Decal" unique_id=768140626]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_csmrp")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=126437259]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=552221923]
+shape = SubResource("BoxShape3D_m3p2h")
