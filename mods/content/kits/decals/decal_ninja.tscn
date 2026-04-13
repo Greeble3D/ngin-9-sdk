@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dkbagp4idwp13"]
+
+[ext_resource type="Texture2D" uid="uid://blfer4y3u1rf7" path="res://mods/content/kits/decals/images/0880-vector-wikianswers-design-mascot-dark-ninja-orange-01.png" id="1_datk1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalNinja" type="Decal" unique_id=1725567273]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_datk1")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=825768197]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=138641584]
+shape = SubResource("BoxShape3D_m3p2h")

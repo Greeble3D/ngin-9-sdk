@@ -24,6 +24,7 @@ folder_colors={
 "res://mods/content/kits/": "yellow",
 "res://mods/content/kits/decals/": "red",
 "res://mods/content/kits/prototyping-objects/": "orange",
+"res://mods/content/kits/spawnables/": "yellow",
 "res://mods/content/kits/testing-misc-objects/": "yellow",
 "res://mods/content/kits/testing-objects-contraptions/": "teal",
 "res://mods/content/kits/testing-objects-contraptions/contraptions/": "yellow",

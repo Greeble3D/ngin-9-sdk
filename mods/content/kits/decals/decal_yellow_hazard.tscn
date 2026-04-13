@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bjh8p462q05y7"]
+
+[ext_resource type="Texture2D" uid="uid://cj8vglk5yt0ks" path="res://mods/content/kits/decals/images/guide-hazard.png" id="1_wkogf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 0.403)
+
+[node name="DecalYellowHazard" type="Decal" unique_id=1830861246]
+size = Vector3(2, 0.5, 0.403)
+texture_albedo = ExtResource("1_wkogf")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2029601396]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1065020136]
+shape = SubResource("BoxShape3D_m3p2h")

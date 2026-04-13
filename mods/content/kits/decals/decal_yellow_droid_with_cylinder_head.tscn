@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bwcjfx1mbx48l"]
+
+[ext_resource type="Texture2D" uid="uid://vrev7hh4p0e2" path="res://mods/content/kits/decals/images/yellow-droid-with-cylinder-conic-head-and-speakers-mouth-and-three-eyed-and-three-spiked.png" id="1_diqce"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalYellowDroidWithCylinderHead" type="Decal" unique_id=570322297]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_diqce")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=872140074]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=957657024]
+shape = SubResource("BoxShape3D_m3p2h")

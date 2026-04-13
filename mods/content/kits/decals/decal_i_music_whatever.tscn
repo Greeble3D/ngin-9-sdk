@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bct0ewnuk7vpg"]
+
+[ext_resource type="Texture2D" uid="uid://b7gum1kd0ll8g" path="res://mods/content/kits/decals/images/0890-vector-wikianswers-orange-avatar-ipod-man-01.png" id="1_q4xln"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalIMusicWhatever" type="Decal" unique_id=396410453]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_q4xln")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1889040855]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1932484857]
+shape = SubResource("BoxShape3D_m3p2h")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://coeliv4wosd0i"]
+
+[ext_resource type="Texture2D" uid="uid://dt6u58vow3il0" path="res://mods/content/kits/decals/images/0902-vector-wikianswers-orange-avatar-spy-01.png" id="1_rf3ck"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalMatrix" type="Decal" unique_id=1735769890]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_rf3ck")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1082775121]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1482703445]
+shape = SubResource("BoxShape3D_m3p2h")

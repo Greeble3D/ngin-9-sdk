@@ -3,17 +3,17 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://didoi4tou7kfe"
-path="res://.godot/imported/piniata.blend-4b4b4c8734e3db525ac43285d2ad61d6.scn"
+uid="uid://l2mu6shj5f7o"
+path="res://.godot/imported/door-parts.blend-1868fc50970589e62412ca351d616aeb.scn"
 
 [deps]
 
-source_file="res://mods/content/kits/testing-objects-contraptions/contraptions/piniata/piniata.blend"
-dest_files=["res://.godot/imported/piniata.blend-4b4b4c8734e3db525ac43285d2ad61d6.scn"]
+source_file="res://mods/content/kits/testing-objects-doors_windows/sources/door-parts.blend"
+dest_files=["res://.godot/imported/door-parts.blend-1868fc50970589e62412ca351d616aeb.scn"]
 
 [params]
 
-nodes/root_type="RigidBody3D"
+nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

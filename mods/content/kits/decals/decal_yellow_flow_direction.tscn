@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://mpimruhvejsl"]
+
+[ext_resource type="Texture2D" uid="uid://b2tn63c2wx6kq" path="res://mods/content/kits/decals/images/guide-flow-direction.png" id="1_80ykv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 0.377)
+
+[node name="DecalYellowFlowDirection" type="Decal" unique_id=278759592]
+size = Vector3(2, 0.5, 0.377)
+texture_albedo = ExtResource("1_80ykv")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=650810304]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1856282986]
+shape = SubResource("BoxShape3D_m3p2h")

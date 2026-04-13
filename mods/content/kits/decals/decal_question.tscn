@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://060o3rj67quf"]
+
+[ext_resource type="Texture2D" uid="uid://ddhg8x3ni3m5" path="res://mods/content/kits/decals/images/0901-vector-wikianswers-orange-avatar-question-man-01.png" id="1_4wn4n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalQuestion" type="Decal" unique_id=990966426]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_4wn4n")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1520697310]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1424819362]
+shape = SubResource("BoxShape3D_m3p2h")

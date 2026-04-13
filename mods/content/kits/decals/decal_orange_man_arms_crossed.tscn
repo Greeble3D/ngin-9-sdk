@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dosecl67lndvv"]
+
+[ext_resource type="Texture2D" uid="uid://b30x0lyfogpl2" path="res://mods/content/kits/decals/images/orange-man-arms-crossed.png" id="1_8xgv3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalOrangeManArmsCrossed" type="Decal" unique_id=872743022]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_8xgv3")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1168970071]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1471279291]
+shape = SubResource("BoxShape3D_m3p2h")

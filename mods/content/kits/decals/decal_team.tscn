@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://hvsyf5y0icug"]
+
+[ext_resource type="Texture2D" uid="uid://d1uyn8w0na3ad" path="res://mods/content/kits/decals/images/0116-vector-design-mascot-team-sign-orange-01.png" id="1_esatn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_esatn"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalTeam" type="Decal" unique_id=300979]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_esatn")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=606114051]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1743764780]
+shape = SubResource("BoxShape3D_esatn")

@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://tp6rinml6y78"]
+
+[ext_resource type="Texture2D" uid="uid://nskncx2bkip6" path="res://mods/content/kits/testing-objects-doors_windows/materials/prototype-texture.png" id="1_e8ooe"]
+
+[resource]
+albedo_texture = ExtResource("1_e8ooe")
+uv1_triplanar = true

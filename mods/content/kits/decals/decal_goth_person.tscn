@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dyivyhvped4wi"]
+
+[ext_resource type="Texture2D" uid="uid://66pg4u0p1epb" path="res://mods/content/kits/decals/images/0888-vector-wikianswers-orange-avatar-grumpy-girl-01.png" id="1_4yvax"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalGothPerson" type="Decal" unique_id=856981844]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_4yvax")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=720343382]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=220676341]
+shape = SubResource("BoxShape3D_m3p2h")

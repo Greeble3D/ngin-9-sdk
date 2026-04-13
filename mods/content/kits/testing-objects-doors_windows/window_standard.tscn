@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://c0hn2iwly4ndo"]
+
+[ext_resource type="PackedScene" uid="uid://djy0xh2e68hj3" path="res://mods/content/kits/testing-objects-doors_windows/sources/window-frame-standard.blend" id="1_sc8kw"]
+[ext_resource type="Material" uid="uid://tp6rinml6y78" path="res://mods/content/kits/testing-objects-doors_windows/materials/prototype-grid-material.tres" id="2_g6uvo"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_sc8kw"]
+size = Vector3(1.4, 1.9, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g6uvo"]
+size = Vector3(1.4, 1.9, 0.2)
+
+[node name="WindowStandard" type="Node3D" unique_id=374860067]
+
+[node name="window-frame-standard" parent="." unique_id=248902140 instance=ExtResource("1_sc8kw")]
+
+[node name="WindowFrame-Standard" parent="window-frame-standard" index="0" unique_id=1495383268]
+material_override = ExtResource("2_g6uvo")
+
+[node name="Window" type="Node3D" parent="." unique_id=585551429]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Window" unique_id=731668645]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.506, -0.2)
+mesh = SubResource("BoxMesh_sc8kw")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Window" unique_id=1496394023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.506, -0.2)
+sleeping = true
+freeze = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Window/RigidBody3D" unique_id=2145081027]
+shape = SubResource("BoxShape3D_g6uvo")
+
+[editable path="window-frame-standard"]

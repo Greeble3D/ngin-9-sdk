@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://pi3loe64v8r2"]
+
+[ext_resource type="Texture2D" uid="uid://dkxcj8jaw77pg" path="res://mods/content/kits/decals/images/0639-vector-orange-man-reporter-news.png" id="1_m335q"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalNews" type="Decal" unique_id=758334684]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_m335q")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=149894553]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=801597793]
+shape = SubResource("BoxShape3D_m3p2h")

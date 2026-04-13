@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://4r6nwck5ucm4"]
+
+[ext_resource type="Texture2D" uid="uid://6k07sp4bpb8g" path="res://mods/content/kits/decals/images/0882-vector-wikianswers-design-mascot-professor-pointing-orange-01.png" id="1_b6duy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalProfessor" type="Decal" unique_id=872923694]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_b6duy")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1984141112]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1232103865]
+shape = SubResource("BoxShape3D_m3p2h")

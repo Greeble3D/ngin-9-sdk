@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://deano8t3e28hu"]
+
+[ext_resource type="Texture2D" uid="uid://0ljgyvw71oph" path="res://mods/content/kits/decals/images/logo-ridgeline-hardware.png" id="1_ah0w8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 0.734)
+
+[node name="DecalLogoRidgelineHardware" type="Decal" unique_id=210039059]
+size = Vector3(2, 0.5, 0.734)
+texture_albedo = ExtResource("1_ah0w8")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=624500545]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1311034092]
+shape = SubResource("BoxShape3D_m3p2h")

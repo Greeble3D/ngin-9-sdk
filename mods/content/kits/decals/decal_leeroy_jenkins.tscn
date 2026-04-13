@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dtfirr5b1ljm1"]
+
+[ext_resource type="Texture2D" uid="uid://4050qc5hm5ek" path="res://mods/content/kits/decals/images/leeroy-jenkins.png" id="1_22u7y"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalLeeroyJenkins" type="Decal" unique_id=1835159370]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_22u7y")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=95871698]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=16827924]
+shape = SubResource("BoxShape3D_m3p2h")

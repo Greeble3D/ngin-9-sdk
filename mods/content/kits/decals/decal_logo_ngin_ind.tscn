@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cx3uoxflumy7i"]
+
+[ext_resource type="Texture2D" uid="uid://cteq3dl4ww6bx" path="res://mods/content/kits/decals/images/logo-ngin-ind.png" id="1_eet24"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 1.333)
+
+[node name="DecalLogoNginInd" type="Decal" unique_id=206671456]
+size = Vector3(2, 0.5, 1.333)
+texture_albedo = ExtResource("1_eet24")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1931585792]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=703135729]
+shape = SubResource("BoxShape3D_m3p2h")

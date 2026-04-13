@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dsim40uj6vi4e"]
+
+[ext_resource type="Texture2D" uid="uid://bch0j17tppvhf" path="res://mods/content/kits/decals/images/guide-square.png" id="1_e7cpr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 1.872)
+
+[node name="DecalYellowGuideSquare" type="Decal" unique_id=1468647830]
+size = Vector3(2, 0.5, 1.872)
+texture_albedo = ExtResource("1_e7cpr")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1925629363]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1563763221]
+shape = SubResource("BoxShape3D_m3p2h")

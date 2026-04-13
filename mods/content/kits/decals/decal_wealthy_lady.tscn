@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://deca0jxuvp7uu"]
+
+[ext_resource type="Texture2D" uid="uid://btiyu1n281r7l" path="res://mods/content/kits/decals/images/0886-vector-wikianswers-orange-avatar-dainty-lady-purplish-01.png" id="1_g8okp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalWealthyLady" type="Decal" unique_id=1529002453]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_g8okp")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2133835788]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=91605647]
+shape = SubResource("BoxShape3D_m3p2h")

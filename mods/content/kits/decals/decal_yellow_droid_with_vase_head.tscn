@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bjcisvwx232qg"]
+
+[ext_resource type="Texture2D" uid="uid://cqcpb6lixxhmr" path="res://mods/content/kits/decals/images/yellow-droid-with-vase-head-and-sad-mouth-and-red-eyed-and-wire-hair.png" id="1_5byxa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalYellowDroidWithVaseHead" type="Decal" unique_id=407583540]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_5byxa")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=181006233]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1234168205]
+shape = SubResource("BoxShape3D_m3p2h")

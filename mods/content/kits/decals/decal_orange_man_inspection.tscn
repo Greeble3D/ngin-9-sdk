@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ckj038fy1kyhf"]
+
+[ext_resource type="Texture2D" uid="uid://dxyxg73tt0jrg" path="res://mods/content/kits/decals/images/orange-man-inspection.png" id="1_0348e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalOrangeManInspection" type="Decal" unique_id=240443301]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_0348e")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=479752166]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=888199512]
+shape = SubResource("BoxShape3D_m3p2h")

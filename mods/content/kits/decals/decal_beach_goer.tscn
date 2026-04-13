@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://5mptv4h6m8oq"]
+
+[ext_resource type="Texture2D" uid="uid://c1ennjvoga0p0" path="res://mods/content/kits/decals/images/0904-vector-wikianswers-orange-avatar-swimsuit-addition-01.png" id="1_lqla0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m3p2h"]
+size = Vector3(2, 0.5, 2)
+
+[node name="DecalBeachGoer" type="Decal" unique_id=1441298890]
+size = Vector3(2, 0.5, 2)
+texture_albedo = ExtResource("1_lqla0")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=55437907]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1931202314]
+shape = SubResource("BoxShape3D_m3p2h")
