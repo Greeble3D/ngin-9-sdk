@@ -14,19 +14,19 @@ size = Vector3(1.38, 2.44, 0.5)
 
 [node name="door-frame-standard" parent="." unique_id=1618713361 instance=ExtResource("1_7qpbn")]
 
-[node name="Door-Frame-Standard" parent="door-frame-standard" index="0" unique_id=24887529]
+[node name="Door-Frame-Standard" parent="door-frame-standard" index="0" unique_id=2074269555]
 material_override = ExtResource("2_wq411")
 
 [node name="door-standard" parent="." unique_id=753387310 instance=ExtResource("3_mqq6a")]
 
-[node name="Door-Standard-rigid" parent="door-standard" index="0" unique_id=1871718449]
+[node name="Door-Standard-rigid" parent="door-standard" index="0" unique_id=1396401383]
 sleeping = true
-freeze = true
+metadata/selectable = true
 
-[node name="Door-Standard-rigid" parent="door-standard/Door-Standard-rigid" index="0" unique_id=14111778]
+[node name="Door-Standard-rigid" parent="door-standard/Door-Standard-rigid" index="0" unique_id=1235256482]
 material_override = ExtResource("2_wq411")
 
-[node name="CollisionShape3D" parent="door-standard/Door-Standard-rigid" index="1" unique_id=382997527]
+[node name="CollisionShape3D" parent="door-standard/Door-Standard-rigid" index="1" unique_id=469899238]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.69, 1.22, 0)
 shape = SubResource("BoxShape3D_7qpbn")
 
