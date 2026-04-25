@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://unfxifbipvr8"]
+
+[ext_resource type="PackedScene" uid="uid://cknkfsme44u7d" path="res://mods/content/models/sources/flashlight.blend" id="1_mubph"]
+
+[node name="flashlight" unique_id=268997069 instance=ExtResource("1_mubph")]

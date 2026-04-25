@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ct1q0xv2p5bcc"]
+
+[ext_resource type="PackedScene" uid="uid://b8a87tyf8utms" path="res://mods/content/models/sources/glue.blend" id="1_da8nh"]
+
+[node name="glue" unique_id=1800615724 instance=ExtResource("1_da8nh")]

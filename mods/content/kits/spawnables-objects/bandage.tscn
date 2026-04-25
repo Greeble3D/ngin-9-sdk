@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://t6jygt1siwf4"]
+
+[ext_resource type="PackedScene" uid="uid://bi0ckxneijhj2" path="res://mods/content/models/sources/bandage.blend" id="1_yarmo"]
+
+[node name="bandage" unique_id=1940350683 instance=ExtResource("1_yarmo")]

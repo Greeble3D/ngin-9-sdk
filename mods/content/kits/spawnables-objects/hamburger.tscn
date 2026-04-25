@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dvanjwywttvms"]
+
+[ext_resource type="PackedScene" uid="uid://pdafl4psdvb4" path="res://mods/content/models/sources/hamburger.blend" id="1_pqpwm"]
+
+[node name="hamburger" unique_id=182457726 instance=ExtResource("1_pqpwm")]

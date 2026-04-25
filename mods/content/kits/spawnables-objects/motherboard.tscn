@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b45nmvgwymos3"]
+
+[ext_resource type="PackedScene" uid="uid://bienhys4rpmd" path="res://mods/content/models/sources/motherboard.blend" id="1_qimq5"]
+
+[node name="motherboard" unique_id=422260544 instance=ExtResource("1_qimq5")]

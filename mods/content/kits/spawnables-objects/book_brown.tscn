@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ce5u1yvdoshub"]
+
+[ext_resource type="PackedScene" uid="uid://b8glmtpym55pw" path="res://mods/content/models/sources/book-brown.blend" id="1_pe0k0"]
+
+[node name="book-brown" unique_id=57548287 instance=ExtResource("1_pe0k0")]

@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cj836dmwc8ayj"]
+
+[ext_resource type="PackedScene" uid="uid://b8uotngyutjfq" path="res://mods/content/models/sources/battery.blend" id="1_7nqpt"]
+
+[node name="battery" unique_id=2061021112 instance=ExtResource("1_7nqpt")]

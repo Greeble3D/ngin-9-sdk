@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ssucjnggtoyo"]
+
+[ext_resource type="PackedScene" uid="uid://byrhvk3xcrhjl" path="res://mods/content/models/sources/alluminium.blend" id="1_uufoo"]
+
+[node name="alluminium" unique_id=333407584 instance=ExtResource("1_uufoo")]

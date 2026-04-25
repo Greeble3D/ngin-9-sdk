@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://jxt1dis2cqu"]
+
+[ext_resource type="PackedScene" uid="uid://dsucb07hsnmch" path="res://mods/content/models/sources/cup.blend" id="1_md8u6"]
+
+[node name="cup" unique_id=1919326592 instance=ExtResource("1_md8u6")]

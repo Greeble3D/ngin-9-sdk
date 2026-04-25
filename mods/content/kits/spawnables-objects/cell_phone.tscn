@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ckhpairbsc3ec"]
+
+[ext_resource type="PackedScene" uid="uid://cxh1lqg13c0e8" path="res://mods/content/models/sources/cell-phone.blend" id="1_j8lp1"]
+
+[node name="cell-phone" unique_id=1976451918 instance=ExtResource("1_j8lp1")]

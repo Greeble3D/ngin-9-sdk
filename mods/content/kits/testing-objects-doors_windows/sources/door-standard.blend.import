@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/door-standard.blend-9b85e88fd80157974854a2642
 
 [params]
 
-nodes/root_type="Node3D"
+nodes/root_type="RigidBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

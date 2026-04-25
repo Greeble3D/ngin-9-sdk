@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dug627l2b1b8e"]
+
+[ext_resource type="PackedScene" uid="uid://p4xxxf4gerrr" path="res://mods/content/models/sources/bottle.blend" id="1_gievc"]
+
+[node name="bottle" unique_id=1163407424 instance=ExtResource("1_gievc")]

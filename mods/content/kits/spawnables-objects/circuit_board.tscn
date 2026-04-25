@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ch6p5hqdycayb"]
+
+[ext_resource type="PackedScene" uid="uid://cf6872cj8ynec" path="res://mods/content/models/sources/circuit-board.blend" id="1_biitq"]
+
+[node name="circuit-board" unique_id=272704839 instance=ExtResource("1_biitq")]

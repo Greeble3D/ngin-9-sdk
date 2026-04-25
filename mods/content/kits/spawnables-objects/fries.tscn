@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b0gfwalfjbhpf"]
+
+[ext_resource type="PackedScene" uid="uid://d3d52vp30qu5d" path="res://mods/content/models/sources/fries.blend" id="1_ubhso"]
+
+[node name="fries" unique_id=1039100652 instance=ExtResource("1_ubhso")]

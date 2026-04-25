@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://d3hb23neuh11w"]
+
+[ext_resource type="PackedScene" uid="uid://cxe75pp1h33rr" path="res://mods/content/models/sources/car-battery.blend" id="1_0s2vt"]
+
+[node name="car-battery" unique_id=1150259390 instance=ExtResource("1_0s2vt")]

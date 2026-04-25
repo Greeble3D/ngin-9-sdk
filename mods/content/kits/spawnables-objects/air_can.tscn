@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://de85x7kifs0cv"]
+
+[ext_resource type="PackedScene" uid="uid://cqclq5sttybn" path="res://mods/content/models/sources/air-can.blend" id="1_yw0ml"]
+
+[node name="air-can" unique_id=1016436023 instance=ExtResource("1_yw0ml")]

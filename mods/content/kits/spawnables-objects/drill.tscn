@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c0ijfy73f2wje"]
+
+[ext_resource type="PackedScene" uid="uid://bchy002m5rx8a" path="res://mods/content/models/sources/drill.blend" id="1_likdy"]
+
+[node name="drill" unique_id=278064430 instance=ExtResource("1_likdy")]

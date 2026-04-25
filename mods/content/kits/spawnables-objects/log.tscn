@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://txrw8eflhlxd"]
+
+[ext_resource type="PackedScene" uid="uid://d2pk4fjbnk27a" path="res://mods/content/models/sources/log.blend" id="1_2k0th"]
+
+[node name="log" unique_id=141881598 instance=ExtResource("1_2k0th")]

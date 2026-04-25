@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cnltyq5cqp7jm"]
+
+[ext_resource type="PackedScene" uid="uid://dbiv7q6e1yolb" path="res://mods/content/models/sources/camera.blend" id="1_sq5t2"]
+
+[node name="camera" unique_id=66657875 instance=ExtResource("1_sq5t2")]

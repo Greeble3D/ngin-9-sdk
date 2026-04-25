@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://7d2tcuc3kh2p"]
+
+[ext_resource type="PackedScene" uid="uid://cc00mhdos5dv8" path="res://mods/content/models/sources/acid.blend" id="1_q1dft"]
+
+[node name="acid" unique_id=2133978187 instance=ExtResource("1_q1dft")]

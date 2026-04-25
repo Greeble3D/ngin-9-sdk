@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bctwpp6vmprlf"]
+
+[ext_resource type="PackedScene" uid="uid://cx3ers4rn828a" path="res://mods/content/models/sources/Aluminum Can.blend" id="1_m3m33"]
+
+[node name="Aluminum Can" unique_id=1079270769 instance=ExtResource("1_m3m33")]

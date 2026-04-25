@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://e223i5j3nj7p"]
+
+[ext_resource type="PackedScene" uid="uid://c8do64aryxgdt" path="res://mods/content/models/sources/candy-bar.blend" id="1_4jqi2"]
+
+[node name="candy-bar" unique_id=1687232002 instance=ExtResource("1_4jqi2")]

@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://evobmjo7iisa"]
+
+[ext_resource type="PackedScene" uid="uid://ttcgd76atpa5" path="res://mods/content/models/sources/fire-ax.blend" id="1_r526t"]
+
+[node name="fire-ax" unique_id=1384928126 instance=ExtResource("1_r526t")]

@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://8cwwtcrundi2"]
+
+[ext_resource type="PackedScene" uid="uid://bb0itt5qse88j" path="res://mods/content/models/sources/metal-bucket.blend" id="1_v5xl3"]
+
+[node name="metal-bucket" unique_id=2061519348 instance=ExtResource("1_v5xl3")]

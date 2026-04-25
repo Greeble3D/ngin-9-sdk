@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dx2ydrrwqcbmp"]
+
+[ext_resource type="PackedScene" uid="uid://bg55rh5kbpwxs" path="res://mods/content/models/sources/cutting-board.blend" id="1_8dvv2"]
+
+[node name="cutting-board" unique_id=198407092 instance=ExtResource("1_8dvv2")]

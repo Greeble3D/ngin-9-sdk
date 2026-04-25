@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dlexkfata81ob"]
+
+[ext_resource type="PackedScene" uid="uid://dglg3utekfk7l" path="res://mods/content/models/sources/spray-bottle.blend" id="1_pcwb4"]
+
+[node name="spray-bottle" unique_id=603667883 instance=ExtResource("1_pcwb4")]

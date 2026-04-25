@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://b8gt5ih3vpnj8"]
+
+[ext_resource type="PackedScene" uid="uid://cfhdoit6h5s3g" path="res://mods/content/models/sources/ammo-box.blend" id="1_52tdt"]
+
+[node name="ammo-box" unique_id=1381932085 instance=ExtResource("1_52tdt")]

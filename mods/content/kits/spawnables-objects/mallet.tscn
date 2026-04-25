@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bx5i52x42y03u"]
+
+[ext_resource type="PackedScene" uid="uid://cjn0iwpwc20l" path="res://mods/content/models/sources/mallet.blend" id="1_65o2u"]
+
+[node name="mallet" unique_id=799060873 instance=ExtResource("1_65o2u")]

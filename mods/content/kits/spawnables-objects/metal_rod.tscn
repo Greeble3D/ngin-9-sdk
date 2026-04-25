@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://de8mhl0h0wx7b"]
+
+[ext_resource type="PackedScene" uid="uid://b3ygmuvcruw1t" path="res://mods/content/models/sources/metal-rod.blend" id="1_7enwv"]
+
+[node name="metal-rod" unique_id=975678389 instance=ExtResource("1_7enwv")]

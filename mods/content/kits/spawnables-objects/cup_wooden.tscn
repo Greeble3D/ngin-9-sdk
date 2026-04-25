@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bq7wknoin7che"]
+
+[ext_resource type="PackedScene" uid="uid://co05cueothcdx" path="res://mods/content/models/sources/cup-wooden.blend" id="1_67vew"]
+
+[node name="cup-wooden" unique_id=1824584711 instance=ExtResource("1_67vew")]

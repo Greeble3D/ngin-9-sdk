@@ -3,46 +3,41 @@
 [ext_resource type="PackedScene" uid="uid://bbka0rcugohvi" path="res://mods/content/kits/testing-objects-doors_windows/sources/door-frame-standard.blend" id="1_7qpbn"]
 [ext_resource type="Material" uid="uid://tp6rinml6y78" path="res://mods/content/kits/testing-objects-doors_windows/materials/prototype-grid-material.tres" id="2_wq411"]
 [ext_resource type="PackedScene" uid="uid://bc7eed5dx6csk" path="res://mods/content/kits/testing-objects-doors_windows/sources/door-standard.blend" id="3_mqq6a"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_7qpbn"]
-size = Vector3(1.38, 2.44, 0.2)
+[ext_resource type="Material" uid="uid://drug21gp8mjuc" path="res://mods/content/kits/prototyping-objects/materials/prototype-grid-material.tres" id="4_wq411"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wq411"]
 size = Vector3(1.38, 2.44, 0.5)
 
 [node name="DoorStandard" type="Node3D" unique_id=2063649930]
 
-[node name="door-frame-standard" parent="." unique_id=1618713361 instance=ExtResource("1_7qpbn")]
+[node name="DoorFrame" parent="." unique_id=1618713361 instance=ExtResource("1_7qpbn")]
 
-[node name="Door-Frame-Standard" parent="door-frame-standard" index="0" unique_id=2074269555]
+[node name="Door-Frame-Standard" parent="DoorFrame" index="0" unique_id=2074269555]
 material_override = ExtResource("2_wq411")
 
-[node name="door-standard" parent="." unique_id=753387310 instance=ExtResource("3_mqq6a")]
-
-[node name="Door-Standard-rigid" parent="door-standard" index="0" unique_id=1396401383]
-sleeping = true
+[node name="Door" parent="." unique_id=1546665581 instance=ExtResource("3_mqq6a")]
 metadata/selectable = true
 
-[node name="Door-Standard-rigid" parent="door-standard/Door-Standard-rigid" index="0" unique_id=1235256482]
-material_override = ExtResource("2_wq411")
+[node name="Door" parent="Door" index="0" unique_id=1697982949]
+surface_material_override/0 = ExtResource("4_wq411")
 
-[node name="CollisionShape3D" parent="door-standard/Door-Standard-rigid" index="1" unique_id=469899238]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.69, 1.22, 0)
-shape = SubResource("BoxShape3D_7qpbn")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Door" unique_id=1722903344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.22, -0.245)
+shape = SubResource("BoxShape3D_wq411")
 
-[node name="Activate_1" type="Area3D" parent="door-standard/Door-Standard-rigid" index="2" unique_id=846747733]
+[node name="Activate_1" type="Area3D" parent="." unique_id=846747733]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="door-standard/Door-Standard-rigid/Activate_1" unique_id=1681855475]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.69, 1.22, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Activate_1" unique_id=1681855475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.22, -0.245)
 shape = SubResource("BoxShape3D_wq411")
 
 [node name="HingeJoint3D" type="HingeJoint3D" parent="." unique_id=756736253]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.6875, 0, -0.25)
-node_a = NodePath("../door-frame-standard/Door-Frame-Standard/StaticBody3D")
-node_b = NodePath("../door-standard/Door-Standard-rigid")
+node_a = NodePath("../DoorFrame/Door-Frame-Standard/StaticBody3D")
+node_b = NodePath("../Door")
 angular_limit/enable = true
 angular_limit/upper = 1.8325957
 angular_limit/lower = -1.8325957
 
-[editable path="door-frame-standard"]
-[editable path="door-standard"]
+[editable path="DoorFrame"]
+[editable path="Door"]
